@@ -1,0 +1,195 @@
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+.bg-landing-image {
+    background-image: url('../../storage/images/backgrounds/landing-image.jpeg');
+    background-attachment: scroll;
+    background-position: center 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.bg-landing-image-2 {
+    background-image: url('../../storage/images/backgrounds/landing-image-2.jpeg');
+    background-attachment: scroll;
+    background-position: center 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.bg-landing-image-3 {
+    background-color: #fff;
+    background-image: url('../../storage/images/backgrounds/landing-image-3.jpeg');
+    background-attachment: scroll;
+    background-position: center 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.bg-landing-image-4 {
+    background-color: #fff;
+    background-image: url('../../storage/images/backgrounds/landing-image-4.jpg');
+    background-attachment: scroll;
+    background-position: center 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.bg-landing-image-5 {
+    background-color: #fff;
+    background-image: url('../../storage/images/backgrounds/landing-image-5.png');
+    background-attachment: scroll;
+    background-position: center 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.bg-landing-image-6 {
+    background-color: #fff;
+    background-image: url('../../storage/images/backgrounds/landing-image-6.jpg');
+    background-attachment: scroll;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.bg-landing-image-7 {
+    background-color: #fff;
+    background-image: url('../../storage/images/backgrounds/landing-image-7.jpg');
+    background-attachment: scroll;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.bg-landing-image-8 {
+    background-color: #fff;
+    background-image: url('../../storage/images/backgrounds/landing-image-8.jpg');
+    background-attachment: scroll;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.bg-landing-image-9 {
+    background-color: #fff;
+    background-image: url('../../storage/images/backgrounds/landing-image-9.jpg');
+    background-attachment: scroll;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+/* For signin page */
+.bg-landing-image-10 {
+    background-color: rgb(250, 251, 252);
+    background-image: url('../../storage/images/backgrounds/landing-image-7.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.box-shadow-landing {
+    box-shadow: 0 15px 35px rgb(50 50 93 / 10%), 0 5px 15px rgb(0 0 0 / 7%);
+}
+.finark-default-link {
+    text-decoration: none !important;
+}
+.finark-default-link:hover {
+    text-decoration: underline !important;
+}
+.map-responsive {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+.finark-social-icons {
+    width: 60px;
+    height: 60px;
+    margin: 0 20px;
+}
+.finark-social-icons:hover {
+    cursor: pointer;
+    width: 55px;
+    height: 55px;
+    opacity: 0.8;
+}
+.trustmark {
+    height: 84px;
+}
+.finark-btn-tool {
+    background-color: transparent;
+    color: #adb5bd;
+    font-size: .875rem;
+    margin: -0.75rem 0;
+    padding: 0.25rem 0.5rem;
+}
+.finark-btn-tool:hover {
+    color: #212529;
+}
+.finark-post-header {
+    float: left;
+}
+.finark-post-header img {
+    float: left;
+    height: 40px;
+    width: 40px;
+}
+.finark-post-header .username, .description, .comment {
+    display: block;
+    margin-left: 50px;
+}
+.finark-post-header .username {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: -1px;
+}
+.finark-post-header .description {
+    color: gray;
+    font-size: 13px;
+    margin-top: -3px;
+}
+.finark-forum-badge {
+    font-size: 10px !important;
+}
+.finark-forum-stats {
+    font-size: 13px !important;
+}
+.finark-user-card {
+    list-style: none;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+    transition: ease-in-out all 300ms;
+}
+.finark-user-card:nth-last-child(1) {
+    border-bottom: 1px solid transparent;
+}
+.finark-aside-avatar {
+    float: left;
+    height: 40px;
+    width: 40px;
+}
+.finark-user-card-details {
+    margin-left: 50px;
+    line-height: 1.5;
+}
+.finark-btn-border {
+    border-radius: 20px !important;
+}
