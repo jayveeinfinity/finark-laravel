@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class PartnersSeeder extends Seeder
 {
@@ -16,9 +17,9 @@ class PartnersSeeder extends Seeder
     {
         
 
-        \DB::table('partners')->delete();
+        DB::table('partners')->delete();
         
-        \DB::table('partners')->insert(array (
+        DB::table('partners')->insert(array (
             0 => 
             array (
                 'id' => 1,

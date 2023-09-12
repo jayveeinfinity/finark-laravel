@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class PartnerGroupReferencesSeeder extends Seeder
 {
@@ -16,9 +17,9 @@ class PartnerGroupReferencesSeeder extends Seeder
     {
         
 
-        \DB::table('partner_group_references')->delete();
+        DB::table('partner_group_references')->delete();
         
-        \DB::table('partner_group_references')->insert(array (
+        DB::table('partner_group_references')->insert(array (
             0 => 
             array (
                 'partner_id' => 2,
