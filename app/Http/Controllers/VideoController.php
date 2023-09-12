@@ -77,8 +77,8 @@ class VideoController extends Controller
     public function uploadChunks(Request $request) {
         $file = $request->file('file');
 
-        $path = storage_path('app\public\chunks\\' . $file->getClientOriginalName());
-        $newPath = storage_path('app\public\videos\course-' . $request->course_id . '\\');
+        $path = storage_path('app/public/chunks/' . $file->getClientOriginalName());
+        $newPath = storage_path('app/public/videos/course-' . $request->course_id . '/');
 
         File::append($path, $file->get());
 

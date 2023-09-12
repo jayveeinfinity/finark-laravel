@@ -12,7 +12,7 @@
                                         <h2 class="font-weight-bold mb-0">{{ course.data.name }}</h2>
                                         <div class="d-flex mt-2">
                                             <span class="me-3 text-dark"><FontAwesomeIcon icon="fa-solid fa-film" /> {{ course.data.videos.length }} episodes</span>
-                                            <span class="me-3 text-dark"><FontAwesomeIcon icon="fa-solid fa-clock" /> 6 hours  54 mins</span>
+                                            <span class="me-3 text-dark"><FontAwesomeIcon icon="fa-solid fa-clock" /> {{ course.data.time_humans }}</span>
                                             <span class="me-3 text-dark"><FontAwesomeIcon icon="fa-solid fa-calendar" /> {{ course.data.timeago }}</span>
                                         </div>
                                     </div>

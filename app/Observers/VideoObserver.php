@@ -26,7 +26,7 @@ class VideoObserver
 
         $video->sequence = $count + 1;
 
-        $path = storage_path('app\public\videos\course-' . $video->course_id . '\\' . $video->filename);
+        $path = storage_path('app/public/videos/course-' . $video->course_id . '/' . $video->filename);
         $getID3 = new getID3;
         
         if(File::exists($path)) {
