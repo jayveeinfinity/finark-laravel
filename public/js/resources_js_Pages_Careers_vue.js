@@ -64,13 +64,13 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
     },
     SubmitForm: function SubmitForm(e) {
       var formData = new FormData();
-      // formData.append('name', this.name);
-      // formData.append('email', this.email);
-      // formData.append('position', this.position);
+      formData.append('name', this.name);
+      formData.append('email', this.email);
+      formData.append('position', this.position);
 
-      formData.append('name', "John Vincent Bonza");
-      formData.append('email', "jayveeinfinity@gmail.com");
-      formData.append('position', "New Consultant");
+      // formData.append('name', "John Vincent Bonza");
+      // formData.append('email', "jayveeinfinity@gmail.com");
+      // formData.append('position', "New Consultant");
       if (this.file != null) {
         formData.append('file', this.file);
       }
@@ -138,7 +138,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
   },
   computed: {
     ModalTitle: function ModalTitle() {
-      return this.position == 'NewConsultant' ? 'new consultant' : this.position == 'ExperiencedConsultant' ? 'experienced consultant' : 'team leader';
+      return this.position == 'NewAdvisor' ? 'new advisor' : 'experienced consultant';
     }
   },
   layout: _Shared_Layouts_Landing__WEBPACK_IMPORTED_MODULE_0__["default"]
@@ -158,87 +158,171 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
-var _hoisted_1 = {
-  "class": "container my-5"
+var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"pt-8 pb-0 bg-white\"><div class=\"container-xxl container-xl container-lg container-md container-sm pt-5\"><div class=\"text-center pt-8 pb-5 fa-2024-bg-aboutus\" style=\"position:relative;height:25rem;\"><div class=\"position-absolute px-5 pb-4\" style=\"bottom:0;\"><h2 class=\"text-start text-uppercase\" style=\"color:#F6F6FA;font-family:Lato;font-size:3.5rem;font-style:normal;font-weight:900;line-height:normal;\"> CAREERS </h2><p style=\"color:#F6F6FA;font-family:Lato;font-size:2rem;font-style:normal;font-weight:400;line-height:normal;\"> Come join our growing team of advisors! Both new and experienced. </p></div></div></div></div>", 1);
+var _hoisted_2 = {
+  "class": "container-xxl container-xl container-lg container-md container-sm my-7"
 };
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", {
-  "class": "finark-fw-800 text-uppercase mb-5"
-}, "Looking for a job?", -1 /* HOISTED */);
-var _hoisted_3 = {
+var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+  "class": "mb-1",
+  style: {
+    "color": "var(--Grey, #A4ADCA)",
+    "text-align": "center",
+    "font-family": "Lato",
+    "font-size": "2rem",
+    "font-style": "normal",
+    "font-weight": "400",
+    "line-height": "normal"
+  }
+}, " Embarking on a new journey? ", -1 /* HOISTED */);
+var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", {
+  style: {
+    "color": "var(--Black, #1D1F27)",
+    "text-align": "center",
+    "font-family": "Lato",
+    "font-size": "3.5rem",
+    "font-style": "normal",
+    "font-weight": "900",
+    "line-height": "normal"
+  }
+}, "Join us in the world of financial services!", -1 /* HOISTED */);
+var _hoisted_5 = {
   "class": "row"
 };
-var _hoisted_4 = {
-  "class": "col-lg-12 mb-3"
-};
-var _hoisted_5 = {
-  "class": "card shadow rounded d-flex flex-row"
-};
 var _hoisted_6 = {
-  "class": "p-5"
+  "class": "col-12"
 };
-var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", {
-  "class": "text-uppercase fw-bold"
-}, "New Consultants", -1 /* HOISTED */);
-var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
-  "class": "font-weight-400"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" \"Embarking on a New Journey? Join Us in the World of Financial Services!"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" As a newcomer looking to establish yourself, we know how crucial it is to have the right support. That's why we offer an excellent learning environment where you will be mentored by established industry professionals whom will shortcut your learning curve."), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" To expedite your professional growth, we provide a rich resource library of meticulously curated training videos, quality content and financial advisory formats. Our aim is to ensure you're fully equipped to navigate the financial services landscape with confidence."), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" We also understand the challenges of entering a new field as it has been shown that ~70% of new consultants transition out of the industry within the first five years. To acknowledge your efforts and dedication during your exploratory phase, we give you full vesting income. This rare benefit guarantees that you retain the rewards of your effort, even if you subsequently decide that the financial services industry isn't your calling."), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Join us, and experience the power of a supportive professional environment, rich learning resources, and a rewards system that truly respects your contributions. Your journey towards becoming a successful financial consultant starts here!\" ")], -1 /* HOISTED */);
+var _hoisted_7 = {
+  "class": "d-flex flex-column py-6"
+};
+var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "d-flex flex-row",
+  style: {
+    "background-image": "url('storage/images/backgrounds/Group 28.png')"
+  }
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
+  src: "storage/images/backgrounds/unsplash_Lks7vei-eAg.png"
+})]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", {
+  "class": "w-100 text-center align-self-center",
+  style: {
+    "color": "var(--White, #F6F6FA)",
+    "font-family": "Lato",
+    "font-size": "3rem",
+    "font-style": "normal",
+    "font-weight": "900",
+    "line-height": "normal"
+  }
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("New Advisors "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "px-2 d-inline-block",
+  style: {
+    "border-radius": "2.99344rem",
+    "background": "var(--White, #F6F6FA)",
+    "color": "var(--Navy-Blue, #1B3768)",
+    "text-align": "center",
+    "font-family": "Lato",
+    "font-size": "1rem",
+    "font-style": "normal",
+    "font-weight": "400",
+    "line-height": "153%"
+  }
+}, "Activitely Hiring")])], -1 /* HOISTED */);
 var _hoisted_9 = {
-  "class": "col-lg-12 mb-3"
+  "class": "py-5"
 };
-var _hoisted_10 = {
-  "class": "card shadow rounded d-flex flex-row"
-};
+var _hoisted_10 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+  style: {
+    "color": "var(--Text-Grey, #747887)",
+    "text-align": "justify",
+    "font-family": "Lato",
+    "font-size": "1.6rem",
+    "font-style": "normal",
+    "font-weight": "400",
+    "line-height": "3rem"
+  }
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Calling All Seasoned Advisors: Elevate Your Practice with Us! "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Are you an experienced agent or consultant ready to reach the next step of success as a producer?Working in an Independent Financial Advisor, you’ll enjoy a heightened competitive edge, with the freedom to compare financial products across a range of providers, ensuring that you can back your advice with the best-in-class solutions. "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" We provide coaching and guidance from experienced industry practitioners to support you to greater productivity. Our competitive banding model would mean that you receive higher remuneration for your work efforts. "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Our philosophy is all about empowering you. Apart from regulatory requirements, we provide the autonomy to conduct your practice as you see fit - the freedom to manage your time in accordance to your priorities. "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Join us and enhance your experience of life. Experience the liberty, support, and reward you deserve as a leading financial advisor. ")], -1 /* HOISTED */);
 var _hoisted_11 = {
-  "class": "p-5"
+  "class": "mt-6 text-center"
 };
-var _hoisted_12 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", {
-  "class": "text-uppercase fw-bold"
-}, "Experienced Consultants", -1 /* HOISTED */);
-var _hoisted_13 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
-  "class": "font-weight-400"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" \"Calling All Seasoned Consultants: Elevate Your Practice with Us!"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Are you an experienced agent or consultant ready to reach the next step of success as a producer?"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Working in an Independent Financial Advisor, you’ll enjoy a heightened competitive edge, with the freedom to compare financial products across a range of providers, ensuring that you can back your advice with the best-in-class solutions."), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" We provide coaching and guidance from experienced industry practitioners to support you to greater productivity. Our competitive banding model would mean that you receive higher remuneration for your work efforts."), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Our philosophy is all about empowering you. Apart from regulatory requirements, we provide the autonomy to conduct your practice as you see fit - the freedom to manage your time in accordance to your priorities."), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Join us and enhance your experience of life. Experience the liberty, support, and reward you deserve as a leading financial consultant.\" ")], -1 /* HOISTED */);
-var _hoisted_14 = {
-  "class": "col-lg-12 mb-3"
+var _hoisted_12 = {
+  "class": "col-12"
 };
+var _hoisted_13 = {
+  "class": "d-flex flex-column py-6"
+};
+var _hoisted_14 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "d-flex flex-row",
+  style: {
+    "background-image": "url('storage/images/backgrounds/Group 28.png')"
+  }
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
+  src: "storage/images/backgrounds/unsplash_Lks7vei-eAg.png"
+})]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", {
+  "class": "w-100 text-center align-self-center",
+  style: {
+    "color": "var(--White, #F6F6FA)",
+    "font-family": "Lato",
+    "font-size": "3rem",
+    "font-style": "normal",
+    "font-weight": "900",
+    "line-height": "normal"
+  }
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Experienced Advisors "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "px-2 d-inline-block",
+  style: {
+    "border-radius": "2.99344rem",
+    "background": "var(--White, #F6F6FA)",
+    "color": "var(--Navy-Blue, #1B3768)",
+    "text-align": "center",
+    "font-family": "Lato",
+    "font-size": "1rem",
+    "font-style": "normal",
+    "font-weight": "400",
+    "line-height": "153%"
+  }
+}, "Activitely Hiring")])], -1 /* HOISTED */);
 var _hoisted_15 = {
-  "class": "card shadow rounded d-flex flex-row"
+  "class": "py-5"
 };
-var _hoisted_16 = {
-  "class": "p-5"
+var _hoisted_16 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+  style: {
+    "color": "var(--Text-Grey, #747887)",
+    "text-align": "justify",
+    "font-family": "Lato",
+    "font-size": "1.6rem",
+    "font-style": "normal",
+    "font-weight": "400",
+    "line-height": "3rem"
+  }
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" As a newcomer looking to establish yourself, we know how crucial it is to have the right support. That's why we offer an excellent learning environment where you will be mentored by established industry professionals whom will shortcut your learning curve. "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" To expedite your professional growth, we provide a rich resource library of meticulously curated training videos, quality content and financial advisory formats. Our aim is to ensure you're fully equipped to navigate the financial services landscape with confidence. "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" We also understand the challenges of entering a new field as it has been shown that ~70% of new consultants transition out of the industry within the first five years. To acknowledge your efforts and dedication during your exploratory phase, we give you full vesting income. This rare benefit guarantees that you retain the rewards of your effort, even if you subsequently decide that the financial services industry isn't your calling. "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Join us, and experience the power of a supportive professional environment, rich learning resources, and a rewards system that truly respects your contributions. Your journey towards becoming a successful financial consultant starts here! ")], -1 /* HOISTED */);
+var _hoisted_17 = {
+  "class": "mt-6 text-center"
 };
-var _hoisted_17 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", {
-  "class": "text-uppercase fw-bold"
-}, "Team Leader", -1 /* HOISTED */);
-var _hoisted_18 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
-  "class": "font-weight-400"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" \"Step Up to Leadership: Building Your Team Towards Your Definition of Success”"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Are you a qualified financial consultant eager to lead your own team, or an existing team leader seeking a supportive, empowering environment to grow your leadership skills? We provide the opportunity for your leadership aspirations and facilitate your growth to become an established leader within the financial services industry."), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Our comprehensive support infrastructure is equipped to support you in developing and building your team in areas of recruitment, training and operations. We work together collaboratively to jointly run activities, so that we can add greater value to our consultants without overstretching our leaders."), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Most importantly, we structure our partnership model to ensure that the path to be a director is clear, as long as you can meet the requirements and that you will not be suppressed or shortchanged for your efforts. "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Take the next step in your leadership journey with us and open up a world of possibilities for yourself and your team.\" ")], -1 /* HOISTED */);
-var _hoisted_19 = {
+var _hoisted_18 = {
   "class": "modal fade",
   id: "applyModal",
   tabindex: "-1",
   "aria-labelledby": "applyModalLabel",
   "aria-hidden": "true"
 };
-var _hoisted_20 = {
+var _hoisted_19 = {
   "class": "modal-dialog modal-dialog-centered"
 };
-var _hoisted_21 = {
+var _hoisted_20 = {
   "class": "modal-content"
 };
-var _hoisted_22 = {
+var _hoisted_21 = {
   "class": "modal-header"
 };
-var _hoisted_23 = {
+var _hoisted_22 = {
   "class": "modal-title fs-5",
   id: "applyModallLabel"
 };
-var _hoisted_24 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+var _hoisted_23 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
   type: "button",
   "class": "btn-close",
   "data-bs-dismiss": "modal",
   "aria-label": "Close"
 }, null, -1 /* HOISTED */);
-var _hoisted_25 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+var _hoisted_24 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "d-flex flex-column finark-bg-primary pt-4 px-4 pb-3"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "mb-3 d-flex justify-content-center"
@@ -248,31 +332,31 @@ var _hoisted_25 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 })]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", {
   "class": "fw-bold text-white text-center"
 }, "Please fill up the following fields")], -1 /* HOISTED */);
-var _hoisted_26 = {
+var _hoisted_25 = {
   "class": "modal-body"
 };
-var _hoisted_27 = {
+var _hoisted_26 = {
   "class": "mb-3"
 };
-var _hoisted_28 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
+var _hoisted_27 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
   "for": "name",
   "class": "form-label fw-bold"
 }, "*Name", -1 /* HOISTED */);
-var _hoisted_29 = {
+var _hoisted_28 = {
   "class": "mb-3"
 };
-var _hoisted_30 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
+var _hoisted_29 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
   "for": "email",
   "class": "form-label fw-bold"
 }, "*Email address", -1 /* HOISTED */);
-var _hoisted_31 = {
+var _hoisted_30 = {
   "class": "mb-3"
 };
-var _hoisted_32 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
+var _hoisted_31 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
   "for": "file",
   "class": "form-label fw-bold"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("*Portfolio or CV "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("em", null, "(PDF file only)")], -1 /* HOISTED */);
-var _hoisted_33 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+var _hoisted_32 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "text-end"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
   type: "button",
@@ -283,65 +367,67 @@ var _hoisted_33 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
   type: "submit",
   "class": "btn finark-bg-primary text-white"
 }, "Submit")], -1 /* HOISTED */);
+var _hoisted_33 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "container-fluid fa-2024-bg-landing-quote"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "py-7"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+  "class": "fa-2024-landing-quote-p"
+}, "Your success is only one step away")])], -1 /* HOISTED */);
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_Head = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Head");
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Head, {
     title: "Careers ⋅ "
-  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [_hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"finark-landing-separator rounded mb-4\"></div> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"col-4 mb-4\">\r\n                <img class=\"finark-careers w-100 shadow-lg\" src=\"/storage/images/careers/1.jpg\">\r\n            </div>\r\n            <div class=\"col-4 mb-4\">\r\n                <img class=\"finark-careers w-100 shadow-lg\" src=\"/storage/images/careers/2.jpg\">\r\n            </div>\r\n            <div class=\"col-4 mb-4\">\r\n                <img class=\"finark-careers w-100 shadow-lg\" src=\"/storage/images/careers/3.jpg\">\r\n            </div>\r\n            <div class=\"col-4 mb-4\">\r\n                <img class=\"finark-careers w-100 shadow-lg\" src=\"/storage/images/careers/4.jpg\">\r\n            </div>\r\n            <div class=\"col-4 mb-4\">\r\n                <img class=\"finark-careers w-100 shadow-lg\" src=\"/storage/images/careers/5.jpg\">\r\n            </div>\r\n            <div class=\"col-4 mb-4\">\r\n                <img class=\"finark-careers w-100 shadow-lg\" src=\"/storage/images/careers/6.jpg\">\r\n            </div>\r\n            <div class=\"col-4 mb-4\">\r\n                <img class=\"finark-careers w-100 shadow-lg\" src=\"/storage/images/careers/7.jpg\">\r\n            </div> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"p-5 finark-bg-primary rounded align-self-stretch d-lg-block d-none\">\r\n                        <h1 class=\"fs-1 text-white\">8th</h1>\r\n                        <p class=\"text-light text-center\">Aug 8</p>\r\n                    </div> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <span class=\"badge finark-bg-primary d-lg-none d-sm-inline-block\">8th Aug 2023</span> "), _hoisted_7, _hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <p class=\"font-weight-400\">\r\n                            <FontAwesomeIcon icon=\"fa-solid fa-location-dot\" class=\"text-finark\" /> <a href=\"https://gdg.community.dev/events/details/google-gdg-manila-presents-google-io-extended-manila-2022/#event-info\">FinArk, Singapore</a>\r\n                        </p> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
-    "class": "btn btn-lg finark-bg-primary rounded-pill text-white",
+  }), _hoisted_1, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [_hoisted_3, _hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"finark-landing-separator rounded mb-4\"></div> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_7, [_hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_9, [_hoisted_10, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_11, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+    "class": "btn fa-2024-btn-wide",
+    href: "javascript:void(0)",
     "data-bs-toggle": "modal",
     "data-bs-target": "#applyModal",
     onClick: _cache[0] || (_cache[0] = function ($event) {
-      return $options.SetSelectedPosition('NewConsultant');
+      return $options.SetSelectedPosition('NewAdvisor');
     })
-  }, "Apply now!"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <button class=\"btn text-primary\">View details</button> ")])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"p-5 finark-bg-primary rounded align-self-stretch d-lg-block d-none\">\r\n                        <h1 class=\"fs-1 text-white\">8th</h1>\r\n                        <p class=\"text-light text-center\">Aug 8</p>\r\n                    </div> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_11, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <span class=\"badge finark-bg-primary d-lg-none d-sm-inline-block\">8th Aug 2023</span> "), _hoisted_12, _hoisted_13, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <p class=\"font-weight-400\">\r\n                            <FontAwesomeIcon icon=\"fa-solid fa-location-dot\" class=\"text-finark\" /> <a href=\"https://gdg.community.dev/events/details/google-gdg-manila-presents-google-io-extended-manila-2022/#event-info\">FinArk, Singapore</a>\r\n                        </p> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
-    "class": "btn btn-lg finark-bg-primary rounded-pill text-white",
+  }, "Apply now!")])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_12, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_13, [_hoisted_14, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_15, [_hoisted_16, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_17, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+    "class": "btn fa-2024-btn-wide",
+    href: "javascript:void(0)",
     "data-bs-toggle": "modal",
     "data-bs-target": "#applyModal",
     onClick: _cache[1] || (_cache[1] = function ($event) {
       return $options.SetSelectedPosition('ExperiencedConsultant');
     })
-  }, "Apply now!"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <button class=\"btn text-primary\">View details</button> ")])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_14, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_15, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"p-5 finark-bg-primary rounded align-self-stretch d-lg-block d-none\">\r\n                        <h1 class=\"fs-1 text-white\">8th</h1>\r\n                        <p class=\"text-light text-center\">Aug 8</p>\r\n                    </div> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_16, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <span class=\"badge finark-bg-primary d-lg-none d-sm-inline-block\">8th Aug 2023</span> "), _hoisted_17, _hoisted_18, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <p class=\"font-weight-400\">\r\n                            <FontAwesomeIcon icon=\"fa-solid fa-location-dot\" class=\"text-finark\" /> <a href=\"https://gdg.community.dev/events/details/google-gdg-manila-presents-google-io-extended-manila-2022/#event-info\">FinArk, Singapore</a>\r\n                        </p> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
-    "class": "btn btn-lg finark-bg-primary rounded-pill text-white",
-    "data-bs-toggle": "modal",
-    "data-bs-target": "#applyModal",
-    onClick: _cache[2] || (_cache[2] = function ($event) {
-      return $options.SetSelectedPosition('TeamLeader');
-    })
-  }, "Apply now!"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <button class=\"btn text-primary\">View details</button> ")])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Modal "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_19, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_20, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_21, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_22, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", _hoisted_23, "Apply as " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($options.ModalTitle), 1 /* TEXT */), _hoisted_24]), _hoisted_25, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_26, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("form", {
-    onSubmit: _cache[6] || (_cache[6] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)(function () {
+  }, "Apply now!")])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"col-4 mb-4\">\r\n                <img class=\"finark-careers w-100 shadow-lg\" src=\"/storage/images/careers/1.jpg\">\r\n            </div>\r\n            <div class=\"col-4 mb-4\">\r\n                <img class=\"finark-careers w-100 shadow-lg\" src=\"/storage/images/careers/2.jpg\">\r\n            </div>\r\n            <div class=\"col-4 mb-4\">\r\n                <img class=\"finark-careers w-100 shadow-lg\" src=\"/storage/images/careers/3.jpg\">\r\n            </div>\r\n            <div class=\"col-4 mb-4\">\r\n                <img class=\"finark-careers w-100 shadow-lg\" src=\"/storage/images/careers/4.jpg\">\r\n            </div>\r\n            <div class=\"col-4 mb-4\">\r\n                <img class=\"finark-careers w-100 shadow-lg\" src=\"/storage/images/careers/5.jpg\">\r\n            </div>\r\n            <div class=\"col-4 mb-4\">\r\n                <img class=\"finark-careers w-100 shadow-lg\" src=\"/storage/images/careers/6.jpg\">\r\n            </div>\r\n            <div class=\"col-4 mb-4\">\r\n                <img class=\"finark-careers w-100 shadow-lg\" src=\"/storage/images/careers/7.jpg\">\r\n            </div> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"col-lg-12 mb-3\">\r\n                <div class=\"card shadow rounded d-flex flex-row\">\r\n                    <div class=\"p-5 finark-bg-primary rounded align-self-stretch d-lg-block d-none\">\r\n                        <h1 class=\"fs-1 text-white\">8th</h1>\r\n                        <p class=\"text-light text-center\">Aug 8</p>\r\n                    </div>\r\n                    <div class=\"p-5\">\r\n                        <span class=\"badge finark-bg-primary d-lg-none d-sm-inline-block\">8th Aug 2023</span>\r\n                        <h1 class=\"text-uppercase fw-bold\">New Consultants</h1>\r\n                        <p class=\"font-weight-400\">\r\n                            \"Embarking on a New Journey? Join Us in the World of Financial Services!<br><br>\r\n                            As a newcomer looking to establish yourself, we know how crucial it is to have the right support. That's why we offer an excellent learning environment where you will be mentored by established industry professionals whom will shortcut your learning curve.<br><br>\r\n                            To expedite your professional growth, we provide a rich resource library of meticulously curated training videos, quality content and financial advisory formats. Our aim is to ensure you're fully equipped to navigate the financial services landscape with confidence.<br><br>\r\n                            We also understand the challenges of entering a new field as it has been shown that ~70% of new consultants transition out of the industry within the first five years. To acknowledge your efforts and dedication during your exploratory phase, we give you full vesting income. This rare benefit guarantees that you retain the rewards of your effort, even if you subsequently decide that the financial services industry isn't your calling.<br><br>\r\n                            Join us, and experience the power of a supportive professional environment, rich learning resources, and a rewards system that truly respects your contributions. Your journey towards becoming a successful financial consultant starts here!\"\r\n                        </p>\r\n                        <button class=\"btn btn-lg finark-bg-primary rounded-pill text-white\" data-bs-toggle=\"modal\" data-bs-target=\"#applyModal\" @click=\"SetSelectedPosition('NewConsultant')\">Apply now!</button>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n            <div class=\"col-lg-12 mb-3\">\r\n                <div class=\"card shadow rounded d-flex flex-row\">\r\n                    <div class=\"p-5\">\r\n                        <h1 class=\"text-uppercase fw-bold\">Experienced Consultants</h1>\r\n                        <p class=\"font-weight-400\">\r\n                            \"Calling All Seasoned Consultants: Elevate Your Practice with Us!<br><br>\r\n                            Are you an experienced agent or consultant ready to reach the next step of success as a producer?<br><br>\r\n                            Working in an Independent Financial Advisor, you’ll enjoy a heightened competitive edge, with the freedom to compare financial products across a range of providers, ensuring that you can back your advice with the best-in-class solutions.<br><br>\r\n                            We provide coaching and guidance from experienced industry practitioners to support you to greater productivity. Our competitive banding model would mean that you receive higher remuneration for your work efforts.<br><br>\r\n                            Our philosophy is all about empowering you. Apart from regulatory requirements, we provide the autonomy to conduct your practice as you see fit - the freedom to manage your time in accordance to your priorities.<br><br>\r\n                            Join us and enhance your experience of life. Experience the liberty, support, and reward you deserve as a leading financial consultant.\"\r\n                        </p>\r\n                        <button class=\"btn btn-lg finark-bg-primary rounded-pill text-white\" data-bs-toggle=\"modal\" data-bs-target=\"#applyModal\" @click=\"SetSelectedPosition('ExperiencedConsultant')\">Apply now!</button>\r\n                    </div>\r\n                </div>\r\n            </div> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"col-lg-12 mb-3\">\r\n                <div class=\"card shadow rounded d-flex flex-row\">\r\n                    <div class=\"p-5 finark-bg-primary rounded align-self-stretch d-lg-block d-none\">\r\n                        <h1 class=\"fs-1 text-white\">8th</h1>\r\n                        <p class=\"text-light text-center\">Aug 8</p>\r\n                    </div>\r\n                    <div class=\"p-5\">\r\n                        <span class=\"badge finark-bg-primary d-lg-none d-sm-inline-block\">8th Aug 2023</span>\r\n                        <h1 class=\"text-uppercase fw-bold\">Team Leader</h1>\r\n                        <p class=\"font-weight-400\">\r\n                            \"Step Up to Leadership: Building Your Team Towards Your Definition of Success”<br><br>\r\n                            Are you a qualified financial consultant eager to lead your own team, or an existing team leader seeking a supportive, empowering environment to grow your leadership skills? We provide the opportunity for your leadership aspirations and facilitate your growth to become an established leader within the financial services industry.<br><br>\r\n                            Our comprehensive support infrastructure is equipped to support you in developing and building your team in areas of recruitment, training and operations. We work together collaboratively to jointly run activities, so that we can add greater value to our consultants without overstretching our leaders.<br><br>\r\n                            Most importantly, we structure our partnership model to ensure that the path to be a director is clear, as long as you can meet the requirements and that you will not be suppressed or shortchanged for your efforts. <br><br>\r\n                            Take the next step in your leadership journey with us and open up a world of possibilities for yourself and your team.\"\r\n                        </p>\r\n                        <p class=\"font-weight-400\">\r\n                            <FontAwesomeIcon icon=\"fa-solid fa-location-dot\" class=\"text-finark\" /> <a href=\"https://gdg.community.dev/events/details/google-gdg-manila-presents-google-io-extended-manila-2022/#event-info\">FinArk, Singapore</a>\r\n                        </p>\r\n                        <button class=\"btn btn-lg finark-bg-primary rounded-pill text-white\" data-bs-toggle=\"modal\" data-bs-target=\"#applyModal\" @click=\"SetSelectedPosition('TeamLeader')\">Apply now!</button>\r\n                        <button class=\"btn text-primary\">View details</button>\r\n                    </div>\r\n                </div>\r\n            </div> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Modal "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_18, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_19, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_20, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_21, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", _hoisted_22, "Apply as " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($options.ModalTitle), 1 /* TEXT */), _hoisted_23]), _hoisted_24, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_25, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("form", {
+    onSubmit: _cache[5] || (_cache[5] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)(function () {
       return $options.SubmitForm && $options.SubmitForm.apply($options, arguments);
     }, ["prevent"]))
-  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_27, [_hoisted_28, (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_26, [_hoisted_27, (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
     type: "text",
     "class": "form-control",
     id: "name",
     placeholder: "Name...",
-    "onUpdate:modelValue": _cache[3] || (_cache[3] = function ($event) {
+    "onUpdate:modelValue": _cache[2] || (_cache[2] = function ($event) {
       return $data.name = $event;
     }),
     autocomplete: "off",
     required: ""
-  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.name]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_29, [_hoisted_30, (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
+  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.name]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_28, [_hoisted_29, (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
     type: "email",
     "class": "form-control",
     id: "email",
     placeholder: "name@example.com",
-    "onUpdate:modelValue": _cache[4] || (_cache[4] = function ($event) {
+    "onUpdate:modelValue": _cache[3] || (_cache[3] = function ($event) {
       return $data.email = $event;
     }),
     autocomplete: "off",
     required: ""
-  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.email]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"mb-3\">\r\n                                    <label for=\"name\" class=\"form-label fw-bold\">*How would you rate our website?</label><br>\r\n                                    <input type=\"radio\" class=\"btn-check\" name=\"btn-check-rate\" id=\"btn-check-poor\" value=\"poor\" autocomplete=\"off\" v-model=\"rate\">\r\n                                    <label class=\"btn btn-outline-primary btn-sm\" for=\"btn-check-poor\">Poor</label>\r\n                                    <input type=\"radio\" class=\"btn-check\" name=\"btn-check-rate\" id=\"btn-check-fair\" value=\"fair\" autocomplete=\"off\" v-model=\"rate\">\r\n                                    <label class=\"btn btn-outline-primary btn-sm\" for=\"btn-check-fair\">Fair</label>\r\n                                    <input type=\"radio\" class=\"btn-check\" name=\"btn-check-rate\" id=\"btn-check-good\" value=\"good\" autocomplete=\"off\" v-model=\"rate\">\r\n                                    <label class=\"btn btn-outline-primary btn-sm\" for=\"btn-check-good\">Good</label>\r\n                                    <input type=\"radio\" class=\"btn-check\" name=\"btn-check-rate\" id=\"btn-check-very-good\" value=\"very-good\" autocomplete=\"off\" v-model=\"rate\">\r\n                                    <label class=\"btn btn-outline-primary btn-sm\" for=\"btn-check-very-good\">Very Good</label>\r\n                                    <input type=\"radio\" class=\"btn-check\" name=\"btn-check-rate\" id=\"btn-check-excellent\" value=\"excellent\" autocomplete=\"off\" v-model=\"rate\">\r\n                                    <label class=\"btn btn-outline-primary btn-sm\" for=\"btn-check-excellent\">Excellent</label>\r\n                                </div> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_31, [_hoisted_32, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
+  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.email]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"mb-3\">\r\n                                    <label for=\"name\" class=\"form-label fw-bold\">*How would you rate our website?</label><br>\r\n                                    <input type=\"radio\" class=\"btn-check\" name=\"btn-check-rate\" id=\"btn-check-poor\" value=\"poor\" autocomplete=\"off\" v-model=\"rate\">\r\n                                    <label class=\"btn btn-outline-primary btn-sm\" for=\"btn-check-poor\">Poor</label>\r\n                                    <input type=\"radio\" class=\"btn-check\" name=\"btn-check-rate\" id=\"btn-check-fair\" value=\"fair\" autocomplete=\"off\" v-model=\"rate\">\r\n                                    <label class=\"btn btn-outline-primary btn-sm\" for=\"btn-check-fair\">Fair</label>\r\n                                    <input type=\"radio\" class=\"btn-check\" name=\"btn-check-rate\" id=\"btn-check-good\" value=\"good\" autocomplete=\"off\" v-model=\"rate\">\r\n                                    <label class=\"btn btn-outline-primary btn-sm\" for=\"btn-check-good\">Good</label>\r\n                                    <input type=\"radio\" class=\"btn-check\" name=\"btn-check-rate\" id=\"btn-check-very-good\" value=\"very-good\" autocomplete=\"off\" v-model=\"rate\">\r\n                                    <label class=\"btn btn-outline-primary btn-sm\" for=\"btn-check-very-good\">Very Good</label>\r\n                                    <input type=\"radio\" class=\"btn-check\" name=\"btn-check-rate\" id=\"btn-check-excellent\" value=\"excellent\" autocomplete=\"off\" v-model=\"rate\">\r\n                                    <label class=\"btn btn-outline-primary btn-sm\" for=\"btn-check-excellent\">Excellent</label>\r\n                                </div> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_30, [_hoisted_31, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
     type: "file",
     "class": "form-control",
     id: "file",
-    onChange: _cache[5] || (_cache[5] = function () {
+    onChange: _cache[4] || (_cache[4] = function () {
       return $options.HandleFileUpload && $options.HandleFileUpload.apply($options, arguments);
     }),
     required: ""
-  }, null, 32 /* HYDRATE_EVENTS */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"mb-3\">\r\n                                    <label for=\"comments\" class=\"form-label fw-bold\">*Is there anything else you'd like to share about our website experience?</label>\r\n                                    <textarea class=\"form-control\" id=\"comments\" rows=\"3\" placeholder=\"Write your messsages, comments and suggestions...\" v-model=\"message\" required></textarea>\r\n                                </div> "), _hoisted_33], 32 /* HYDRATE_EVENTS */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"modal-footer pt-0\">\r\n                            <button type=\"button\" class=\"btn btn-secondary\" data-bs-dismiss=\"modal\">Close</button>\r\n                        </div> ")])])])])])], 64 /* STABLE_FRAGMENT */);
+  }, null, 32 /* HYDRATE_EVENTS */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"mb-3\">\r\n                                    <label for=\"comments\" class=\"form-label fw-bold\">*Is there anything else you'd like to share about our website experience?</label>\r\n                                    <textarea class=\"form-control\" id=\"comments\" rows=\"3\" placeholder=\"Write your messsages, comments and suggestions...\" v-model=\"message\" required></textarea>\r\n                                </div> "), _hoisted_32], 32 /* HYDRATE_EVENTS */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"modal-footer pt-0\">\r\n                            <button type=\"button\" class=\"btn btn-secondary\" data-bs-dismiss=\"modal\">Close</button>\r\n                        </div> ")])])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" # QUOTE SECTION "), _hoisted_33], 64 /* STABLE_FRAGMENT */);
 }
 
 /***/ }),

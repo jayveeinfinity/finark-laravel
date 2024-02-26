@@ -21,7 +21,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Pages_Services_GeneralInsurance__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./../Pages/Services/GeneralInsurance */ "./resources/js/Pages/Services/GeneralInsurance.vue");
 /* harmony import */ var _Pages_Services_EstatePlanning__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./../Pages/Services/EstatePlanning */ "./resources/js/Pages/Services/EstatePlanning.vue");
 /* harmony import */ var _Pages_Services_BusinessContinuity__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./../Pages/Services/BusinessContinuity */ "./resources/js/Pages/Services/BusinessContinuity.vue");
-/* harmony import */ var _Shared_Layouts_Services__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./../Shared/Layouts/Services */ "./resources/js/Shared/Layouts/Services.vue");
+/* harmony import */ var _Shared_Components_AppointmentModal__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./../Shared/Components/AppointmentModal */ "./resources/js/Shared/Components/AppointmentModal.vue");
 
 
 
@@ -32,9 +32,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
+// import ServicesLayout from './../Shared/Layouts/Services';
 
 var __default__ = {
-  layout: _Shared_Layouts_Services__WEBPACK_IMPORTED_MODULE_10__["default"],
+  // layout: ServicesLayout,
   props: {
     page: String
   }
@@ -45,9 +48,6 @@ var __default__ = {
     var __expose = _ref.expose;
     __expose();
     var __returned__ = {
-      get ServicesLayout() {
-        return _Shared_Layouts_Services__WEBPACK_IMPORTED_MODULE_10__["default"];
-      },
       get FinancialPlanningAdults() {
         return _Pages_Services_FinancialPlanningAdults__WEBPACK_IMPORTED_MODULE_0__["default"];
       },
@@ -77,6 +77,9 @@ var __default__ = {
       },
       get BusinessContinuity() {
         return _Pages_Services_BusinessContinuity__WEBPACK_IMPORTED_MODULE_9__["default"];
+      },
+      get AppointmentModal() {
+        return _Shared_Components_AppointmentModal__WEBPACK_IMPORTED_MODULE_10__["default"];
       }
     };
     Object.defineProperty(__returned__, '__isScriptSetup', {
@@ -231,53 +234,6 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Shared/Layouts/Services.vue?vue&type=script&setup=true&lang=js":
-/*!*****************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Shared/Layouts/Services.vue?vue&type=script&setup=true&lang=js ***!
-  \*****************************************************************************************************************************************************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _Partials_Header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../Partials/Header */ "./resources/js/Shared/Partials/Header.vue");
-/* harmony import */ var _Partials_Footer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../Partials/Footer */ "./resources/js/Shared/Partials/Footer.vue");
-/* harmony import */ var _Components_AppointmentModal__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../Components/AppointmentModal */ "./resources/js/Shared/Components/AppointmentModal.vue");
-/* harmony import */ var _Components_FeedbackModal__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./../Components/FeedbackModal */ "./resources/js/Shared/Components/FeedbackModal.vue");
-
-
-
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  __name: 'Services',
-  setup: function setup(__props, _ref) {
-    var __expose = _ref.expose;
-    __expose();
-    var __returned__ = {
-      get Header() {
-        return _Partials_Header__WEBPACK_IMPORTED_MODULE_0__["default"];
-      },
-      get Footer() {
-        return _Partials_Footer__WEBPACK_IMPORTED_MODULE_1__["default"];
-      },
-      get AppointmentModal() {
-        return _Components_AppointmentModal__WEBPACK_IMPORTED_MODULE_2__["default"];
-      },
-      get FeedbackModal() {
-        return _Components_FeedbackModal__WEBPACK_IMPORTED_MODULE_3__["default"];
-      }
-    };
-    Object.defineProperty(__returned__, '__isScriptSetup', {
-      enumerable: false,
-      value: true
-    });
-    return __returned__;
-  }
-});
-
-/***/ }),
-
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/Service.vue?vue&type=template&id=7489bc9c":
 /*!************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/Service.vue?vue&type=template&id=7489bc9c ***!
@@ -291,7 +247,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 var _hoisted_1 = {
-  "class": "container py-5"
+  "class": "container-xxl pt-7 pb-5"
 };
 var _hoisted_2 = {
   "class": "mt-lg-5 mt-4"
@@ -326,8 +282,76 @@ var _hoisted_11 = {
 var _hoisted_12 = {
   key: 9
 };
+var _hoisted_13 = {
+  "class": "container-fluid fa-2024-bg-landing-quote"
+};
+var _hoisted_14 = {
+  "class": "container-xxl py-7"
+};
+var _hoisted_15 = {
+  "class": "d-flex flex-row justify-content-between"
+};
+var _hoisted_16 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+  "class": "fa-2024-services-quote"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("We would "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "love"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" to hear from you")], -1 /* HOISTED */);
+var _hoisted_17 = {
+  "class": "d-flex flex-column"
+};
+var _hoisted_18 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+  "class": "fa-2024-services-quote-alt"
+}, "Share with friends", -1 /* HOISTED */);
+var _hoisted_19 = {
+  "class": "d-flex flex-row align-items-center",
+  style: {
+    "gap": "1.5rem !important"
+  }
+};
+var _hoisted_20 = {
+  "class": "finark-default-link",
+  href: "https://www.facebook.com/FinancialArk",
+  target: "_blank"
+};
+var _hoisted_21 = {
+  "class": "finark-default-link text-white",
+  href: "https://www.instagram.com/finark.advisory/",
+  target: "_blank"
+};
+var _hoisted_22 = {
+  "class": "finark-default-link text-white",
+  href: "https://wa.me/6591813260",
+  target: "_blank"
+};
+var _hoisted_23 = {
+  "class": "finark-default-link text-white",
+  href: "https://www.youtube.com/@FinancialArk",
+  target: "_blank"
+};
+var _hoisted_24 = {
+  "class": "finark-default-link",
+  href: "https://www.linkedin.com/company/finarkgroup/",
+  target: "_blank"
+};
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [$props.page == 'financial-planning-adults' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["FinancialPlanningAdults"])])) : $props.page == 'financial-planning-children' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["FinancialPlanningChildren"])])) : $props.page == 'insurance-portfolio-review' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["InsurancePortfolioReview"])])) : $props.page == 'savings-and-investment-plans' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["SavingsAndInvestmentPlans"])])) : $props.page == 'retirement-planning' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["RetirementPlanning"])])) : $props.page == 'loan-advisory' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["LoanAdvisory"])])) : $props.page == 'investment-advisory' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["InvestmentAdvisory"])])) : $props.page == 'general-insurance' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["GeneralInsurance"])])) : $props.page == 'estate-planning' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_11, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["EstatePlanning"])])) : $props.page == 'business-continuity' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_12, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["BusinessContinuity"])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])]);
+  var _component_FontAwesomeIcon = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("FontAwesomeIcon");
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [$props.page == 'financial-planning-adults' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["FinancialPlanningAdults"])])) : $props.page == 'financial-planning-children' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["FinancialPlanningChildren"])])) : $props.page == 'insurance-portfolio-review' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["InsurancePortfolioReview"])])) : $props.page == 'savings-and-investment-plans' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["SavingsAndInvestmentPlans"])])) : $props.page == 'retirement-planning' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["RetirementPlanning"])])) : $props.page == 'loan-advisory' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["LoanAdvisory"])])) : $props.page == 'investment-advisory' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["InvestmentAdvisory"])])) : $props.page == 'general-insurance' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["GeneralInsurance"])])) : $props.page == 'estate-planning' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_11, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["EstatePlanning"])])) : $props.page == 'business-continuity' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_12, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["BusinessContinuity"])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" # QUOTE SECTION "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_13, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_14, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_15, [_hoisted_16, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_17, [_hoisted_18, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_19, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_20, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_FontAwesomeIcon, {
+    icon: "fa-brands fa-square-facebook",
+    "class": "fa-2024-services-social-icon"
+  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_21, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_FontAwesomeIcon, {
+    icon: "fa-brands fa-square-instagram",
+    "class": "fa-2024-services-social-icon"
+  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_22, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_FontAwesomeIcon, {
+    icon: "fa-solid fa-envelope",
+    "class": "fa-2024-services-social-icon"
+  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_23, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_FontAwesomeIcon, {
+    icon: "fa-brands fa-youtube",
+    "class": "fa-2024-services-social-icon"
+  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_24, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_FontAwesomeIcon, {
+    icon: "fa-brands fa-linkedin",
+    "class": "fa-2024-services-social-icon"
+  })])])])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["AppointmentModal"], {
+    minDate: this.$page.props.minDate,
+    page: this.$page.props.page
+  }, null, 8 /* PROPS */, ["minDate", "page"])], 64 /* STABLE_FRAGMENT */);
 }
 
 /***/ }),
@@ -344,9 +368,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
-var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<h1 class=\"finark-text-primary finark-fw-800 fs-1 lh-1\">Business Continuity</h1><p class=\"fw-normal fs-5 m-0\">Protect your business and minimize the effects of potential disruption</p><div class=\"row py-4 pb-5 justify-content-center align-items-center\"><div class=\"col-6\"><h2 class=\"finark-text-primary fw-bold fs-3 mb-5 lh-1\">The loss of a key executive can make the rest of yoyr organization very vulnerable.</h2><p class=\"finark-text-primary fw-normal fs-5 text-justify\"> This can have an impact on revenue, cost, reputation, and more. Businesses need to be prepared for such a situation by having contingency plans in place.<br><br> Our solutions provide financial protection and peace of mind so that you can focus on your business and not worry about the potential fallout from unforeseen events. You can rest assured that your organization is protected if the worst should happen. </p></div><div class=\"col-6\"><img class=\"w-100\" src=\"/storage/images/services/10.png\"></div></div><div class=\"d-flex justify-content-between\"><div><p class=\"finark-text-primary fw-bold fs-5 mb-0 lh-1\">For your information</p><p class=\"fw-normal\">We love to hear from you</p></div><div><button class=\"btn btn-lg finark-bg-primary rounded-pill text-white fs-6\" data-bs-toggle=\"modal\" data-bs-target=\"#appointmentModal\">Book an Appointment</button></div><div><p class=\"finark-text-primary fw-normal mb-0\">Share with friends</p><p><a class=\"finark-default-link text-white\" href=\"https://www.facebook.com/FinancialArk\" target=\"_blank\"><img src=\"/storage/images/social-icons/facebook.png\" width=\"32\"></a><a class=\"finark-default-link text-white\" href=\"https://www.linkedin.com/company/finarkgroup/\" target=\"_blank\"><img src=\"/storage/images/social-icons/linkedin.png\" width=\"32\"></a><a class=\"finark-default-link text-white\" href=\"https://wa.me/6591813260\" target=\"_blank\"><img src=\"/storage/images/social-icons/whatsapp.png\" width=\"32\"></a><a class=\"finark-default-link text-white\" href=\"https://www.youtube.com/@FinancialArk\" target=\"_blank\"><img src=\"/storage/images/social-icons/youtube.png\" width=\"32\"></a><a class=\"finark-default-link text-white\" href=\"https://www.instagram.com/finark.advisory/\" target=\"_blank\"><img src=\"/storage/images/social-icons/instagram.png\" width=\"32\"></a></p></div></div>", 4);
+var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"fa-2024-services-card-active fa-2024-bg-s10\"><div class=\"fa-2024-bg-overlay-active\"></div><div class=\"fa-2024-services-card-active-content\"><h4>Business Continuity</h4><h6 class=\"text-truncate\">Protect your business and minimize the effects<br>of potential disruption</h6></div></div><div class=\"mt-5 p-4 d-flex flex-column justify-content-center\" style=\"gap:2.5rem;\"><p class=\"fa-2024-services-description text-justify mb-0\"> The loss of a key executive can make the rest of yoyr organization very vulnerable. </p><p class=\"fa-2024-services-description text-justify mb-0\"> This can have an impact on revenue, cost, reputation, and more. Businesses need to be prepared for such a situation by having contingency plans in place. </p><p class=\"fa-2024-services-description text-justify mb-0\"> Our solutions provide financial protection and peace of mind so that you can focus on your business and not worry about the potential fallout from unforeseen events. You can rest assured that your organization is protected if the worst should happen. </p><div class=\"align-self-center\"><button class=\"btn btn-lg fa-2024-btn-wide fs-5\" data-bs-toggle=\"modal\" data-bs-target=\"#appointmentModal\">Book an Appointment</button></div></div>", 2);
 function render(_ctx, _cache) {
-  return _hoisted_1;
+  var _component_Head = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Head");
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Head, {
+    title: "Business Continuity ⋅ "
+  }), _hoisted_1], 64 /* STABLE_FRAGMENT */);
 }
 
 /***/ }),
@@ -363,9 +390,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
-var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<h1 class=\"finark-text-primary finark-fw-800 fs-1 lh-1\">Estate Planning</h1><p class=\"fw-normal fs-5 m-0\">Plan for the future and give your loved ones the certainty of financial security</p><div class=\"row py-4 pb-5 justify-content-center align-items-center\"><div class=\"col-6\"><h2 class=\"finark-text-primary fw-bold fs-3 mb-5 lh-1\">Talking about death is never esay. And when it comes to your estate, there are a lot of things to consider.</h2><p class=\"finark-text-primary fw-normal fs-5 text-justify\"> Establishing a comprehensive estate plan for your family prevents unnecessary costs and reduces emotional hardship on your loved ones by keeping control over exactly how your assets are distributed after your death.<br><br> Get started with estate planning by talking to one of our independent financial advisors today. </p></div><div class=\"col-6\"><img class=\"w-100\" src=\"/storage/images/services/9.png\"></div></div><div class=\"d-flex justify-content-between\"><div><p class=\"finark-text-primary fw-bold fs-5 mb-0 lh-1\">For your information</p><p class=\"fw-normal\">We love to hear from you</p></div><div><button class=\"btn btn-lg finark-bg-primary rounded-pill text-white fs-6\" data-bs-toggle=\"modal\" data-bs-target=\"#appointmentModal\">Book an Appointment</button></div><div><p class=\"finark-text-primary fw-normal mb-0\">Share with friends</p><p><a class=\"finark-default-link text-white\" href=\"https://www.facebook.com/FinancialArk\" target=\"_blank\"><img src=\"/storage/images/social-icons/facebook.png\" width=\"32\"></a><a class=\"finark-default-link text-white\" href=\"https://www.linkedin.com/company/finarkgroup/\" target=\"_blank\"><img src=\"/storage/images/social-icons/linkedin.png\" width=\"32\"></a><a class=\"finark-default-link text-white\" href=\"https://wa.me/6591813260\" target=\"_blank\"><img src=\"/storage/images/social-icons/whatsapp.png\" width=\"32\"></a><a class=\"finark-default-link text-white\" href=\"https://www.youtube.com/@FinancialArk\" target=\"_blank\"><img src=\"/storage/images/social-icons/youtube.png\" width=\"32\"></a><a class=\"finark-default-link text-white\" href=\"https://www.instagram.com/finark.advisory/\" target=\"_blank\"><img src=\"/storage/images/social-icons/instagram.png\" width=\"32\"></a></p></div></div>", 4);
+var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"fa-2024-services-card-active fa-2024-bg-s9\"><div class=\"fa-2024-bg-overlay-active\"></div><div class=\"fa-2024-services-card-active-content\"><h4>Estate Planning</h4><h6 class=\"text-truncate\">Plan for the future and give your loved ones the<br>certainty of financial security</h6></div></div><div class=\"mt-5 p-4 d-flex flex-column justify-content-center\" style=\"gap:2.5rem;\"><p class=\"fa-2024-services-description text-justify mb-0\"> Talking about death is never esay. And when it comes to your estate, there are a lot of things to consider. </p><p class=\"fa-2024-services-description text-justify mb-0\"> Establishing a comprehensive estate plan for your family prevents unnecessary costs and reduces emotional hardship on your loved ones by keeping control over exactly how your assets are distributed after your death. </p><p class=\"fa-2024-services-description text-justify mb-0\"> Get started with estate planning by talking to one of our independent financial advisors today. </p><div class=\"align-self-center\"><button class=\"btn btn-lg fa-2024-btn-wide fs-5\" data-bs-toggle=\"modal\" data-bs-target=\"#appointmentModal\">Book an Appointment</button></div></div>", 2);
 function render(_ctx, _cache) {
-  return _hoisted_1;
+  var _component_Head = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Head");
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Head, {
+    title: "Estate Planning ⋅ "
+  }), _hoisted_1], 64 /* STABLE_FRAGMENT */);
 }
 
 /***/ }),
@@ -382,9 +412,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
-var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<h1 class=\"finark-text-primary finark-fw-800 fs-1 lh-1\">Financial Planning for Adults</h1><p class=\"fw-normal fs-5 m-0\">Double your confidence with our tailor-made financial plans</p><div class=\"row py-4 pb-5 justify-content-center align-items-center\"><div class=\"col-6\"><h2 class=\"finark-text-primary fw-bold fs-3 mb-5 lh-1\">Financial planning enables you to take control of your future.</h2><p class=\"finark-text-primary fw-normal fs-5 text-justify\"> It can help you to identify pontential risks, develop strategies to achieve your goals, and provide you with the right tools and resources to help you stay on track. </p><br><p class=\"finark-text-primary fw-normal fs-5 text-justify\"> Our advisors are there every step of the way, giving you the confidence to make financial decisions with clarity and helping you move closer towards achieving your financial goals. </p></div><div class=\"col-6\"><img class=\"w-100\" src=\"/storage/images/services/1.png\"></div></div><div class=\"d-flex justify-content-between\"><div><p class=\"finark-text-primary fw-bold fs-5 mb-0 lh-1\">For your information</p><p class=\"fw-normal\">We love to hear from you</p></div><div><button class=\"btn btn-lg finark-bg-primary rounded-pill text-white fs-6\" data-bs-toggle=\"modal\" data-bs-target=\"#appointmentModal\">Book an Appointment</button></div><div><p class=\"finark-text-primary fw-normal mb-0\">Share with friends</p><p><a class=\"finark-default-link text-white\" href=\"https://www.facebook.com/FinancialArk\" target=\"_blank\"><img src=\"/storage/images/social-icons/facebook.png\" width=\"32\"></a><a class=\"finark-default-link text-white\" href=\"https://www.linkedin.com/company/finarkgroup/\" target=\"_blank\"><img src=\"/storage/images/social-icons/linkedin.png\" width=\"32\"></a><a class=\"finark-default-link text-white\" href=\"https://wa.me/6591813260\" target=\"_blank\"><img src=\"/storage/images/social-icons/whatsapp.png\" width=\"32\"></a><a class=\"finark-default-link text-white\" href=\"https://www.youtube.com/@FinancialArk\" target=\"_blank\"><img src=\"/storage/images/social-icons/youtube.png\" width=\"32\"></a><a class=\"finark-default-link text-white\" href=\"https://www.instagram.com/finark.advisory/\" target=\"_blank\"><img src=\"/storage/images/social-icons/instagram.png\" width=\"32\"></a></p></div></div>", 4);
+var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"fa-2024-services-card-active fa-2024-bg-s1\"><div class=\"fa-2024-bg-overlay-active\"></div><div class=\"fa-2024-services-card-active-content\"><h4>Financial Planning (Adults)</h4><h6 class=\"text-truncate\">Double your confidence with our tailor-made financial plans.</h6></div></div><div class=\"mt-5 p-4 d-flex flex-column justify-content-center\" style=\"gap:2.5rem;\"><p class=\"fa-2024-services-description text-justify mb-0\"> Financial planning enables you to take control of your future. </p><p class=\"fa-2024-services-description text-justify mb-0\"> It can help you to identify potential risks, develop strategies to achieve your goals, and provide you with the right tools and resources to help you stay on track. </p><p class=\"fa-2024-services-description text-justify mb-0\"> Our advisors are there every step of the way, giving you the confidence to make financial decisions with clarity and helping you move closer towards achieving your financial goals. </p><div class=\"align-self-center\"><button class=\"btn btn-lg fa-2024-btn-wide fs-5\" data-bs-toggle=\"modal\" data-bs-target=\"#appointmentModal\">Book an Appointment</button></div></div>", 2);
 function render(_ctx, _cache) {
-  return _hoisted_1;
+  var _component_Head = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Head");
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Head, {
+    title: "Financial Planning for Adults ⋅ "
+  }), _hoisted_1], 64 /* STABLE_FRAGMENT */);
 }
 
 /***/ }),
@@ -401,9 +434,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
-var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<h1 class=\"finark-text-primary finark-fw-800 fs-1 lh-1\">Financial Planning for Children</h1><p class=\"fw-normal fs-5 m-0\">Create a safe tomorrow for your children</p><div class=\"row py-4 pb-5 justify-content-center align-items-center\"><div class=\"col-6\"><h2 class=\"finark-text-primary fw-bold fs-3 mb-5 lh-1\">A parent&#39;s love is beyond measure</h2><p class=\"finark-text-primary fw-normal fs-5 text-justify\"> It can help you to identify potential risks, develop strategies to achieve your goals, and provide you with the right tools and resources to help you stay on track. </p><br><p class=\"finark-text-primary fw-normal fs-5 text-justify\"> Our advisors are there every step of the way, giving you the confidence to make financial decisions with clarity and helping you move closer towards achieving your financial goals. </p></div><div class=\"col-6\"><img class=\"w-100\" src=\"/storage/images/services/2.png\"></div></div><div class=\"d-flex justify-content-between\"><div><p class=\"finark-text-primary fw-bold fs-5 mb-0 lh-1\">For your information</p><p class=\"fw-normal\">We love to hear from you</p></div><div><button class=\"btn btn-lg finark-bg-primary rounded-pill text-white fs-6\" data-bs-toggle=\"modal\" data-bs-target=\"#appointmentModal\">Book an Appointment</button></div><div><p class=\"finark-text-primary fw-normal mb-0\">Share with friends</p><p><a class=\"finark-default-link text-white\" href=\"https://www.facebook.com/FinancialArk\" target=\"_blank\"><img src=\"/storage/images/social-icons/facebook.png\" width=\"32\"></a><a class=\"finark-default-link text-white\" href=\"https://www.linkedin.com/company/finarkgroup/\" target=\"_blank\"><img src=\"/storage/images/social-icons/linkedin.png\" width=\"32\"></a><a class=\"finark-default-link text-white\" href=\"https://wa.me/6591813260\" target=\"_blank\"><img src=\"/storage/images/social-icons/whatsapp.png\" width=\"32\"></a><a class=\"finark-default-link text-white\" href=\"https://www.youtube.com/@FinancialArk\" target=\"_blank\"><img src=\"/storage/images/social-icons/youtube.png\" width=\"32\"></a><a class=\"finark-default-link text-white\" href=\"https://www.instagram.com/finark.advisory/\" target=\"_blank\"><img src=\"/storage/images/social-icons/instagram.png\" width=\"32\"></a></p></div></div>", 4);
+var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"fa-2024-services-card-active fa-2024-bg-s2\"><div class=\"fa-2024-bg-overlay-active\"></div><div class=\"fa-2024-services-card-active-content\"><h4>Financial Planning (Children)</h4><h6 class=\"text-truncate\">Create a safe tomorrow for your children.</h6></div></div><div class=\"mt-5 p-4 d-flex flex-column justify-content-center\" style=\"gap:2.5rem;\"><p class=\"fa-2024-services-description text-justify mb-0\"> A parent&#39;s love is beyond measure. </p><p class=\"fa-2024-services-description text-justify mb-0\"> It can help you to identify potential risks, develop strategies to achieve your goals, and provide you with the right tools and resources to help you stay on track. </p><p class=\"fa-2024-services-description text-justify mb-0\"> Our advisors are there every step of the way, giving you the confidence to make financial decisions with clarity and helping you move closer towards achieving your financial goals. </p><div class=\"align-self-center\"><button class=\"btn btn-lg fa-2024-btn-wide fs-5\" data-bs-toggle=\"modal\" data-bs-target=\"#appointmentModal\">Book an Appointment</button></div></div>", 2);
 function render(_ctx, _cache) {
-  return _hoisted_1;
+  var _component_Head = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Head");
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Head, {
+    title: "Financial Planning for Children ⋅ "
+  }), _hoisted_1], 64 /* STABLE_FRAGMENT */);
 }
 
 /***/ }),
@@ -420,9 +456,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
-var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<h1 class=\"finark-text-primary finark-fw-800 fs-1 lh-1\">General Insurance</h1><p class=\"fw-normal fs-5 m-0\">Get peace of mind knowing you and your family are secure with our trusted insurance advice</p><div class=\"row py-4 pb-5 justify-content-center align-items-center\"><div class=\"col-6\"><h2 class=\"finark-text-primary fw-bold fs-3 mb-5 lh-1\">The right coverage, tailored to your needs</h2><p class=\"finark-text-primary fw-normal fs-5 text-justify\"> Insurance is more than just a product - it&#39;s an investment in your future. However, the number of insurance products and providers is overwhelming, and you&#39;re not sure whom to trust.<br><br> Our team of independent financial advisors will guide you in choosing the solution that is tailored to your life. Affordable and secure insurance that meets your needs is right within reach. </p></div><div class=\"col-6\"><img class=\"w-100\" src=\"/storage/images/services/8.png\"></div></div><div class=\"d-flex justify-content-between\"><div><p class=\"finark-text-primary fw-bold fs-5 mb-0 lh-1\">For your information</p><p class=\"fw-normal\">We love to hear from you</p></div><div><button class=\"btn btn-lg finark-bg-primary rounded-pill text-white fs-6\" data-bs-toggle=\"modal\" data-bs-target=\"#appointmentModal\">Book an Appointment</button></div><div><p class=\"finark-text-primary fw-normal mb-0\">Share with friends</p><p><a class=\"finark-default-link text-white\" href=\"https://www.facebook.com/FinancialArk\" target=\"_blank\"><img src=\"/storage/images/social-icons/facebook.png\" width=\"32\"></a><a class=\"finark-default-link text-white\" href=\"https://www.linkedin.com/company/finarkgroup/\" target=\"_blank\"><img src=\"/storage/images/social-icons/linkedin.png\" width=\"32\"></a><a class=\"finark-default-link text-white\" href=\"https://wa.me/6591813260\" target=\"_blank\"><img src=\"/storage/images/social-icons/whatsapp.png\" width=\"32\"></a><a class=\"finark-default-link text-white\" href=\"https://www.youtube.com/@FinancialArk\" target=\"_blank\"><img src=\"/storage/images/social-icons/youtube.png\" width=\"32\"></a><a class=\"finark-default-link text-white\" href=\"https://www.instagram.com/finark.advisory/\" target=\"_blank\"><img src=\"/storage/images/social-icons/instagram.png\" width=\"32\"></a></p></div></div>", 4);
+var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"fa-2024-services-card-active fa-2024-bg-s8\"><div class=\"fa-2024-bg-overlay-active\"></div><div class=\"fa-2024-services-card-active-content\"><h4>General Insurance</h4><h6 class=\"text-truncate\">Get peace of mind knowing you and your family are<br>secure with our trusted insurance advice</h6></div></div><div class=\"mt-5 p-4 d-flex flex-column justify-content-center\" style=\"gap:2.5rem;\"><p class=\"fa-2024-services-description text-justify mb-0\"> The right coverage, tailored to your needs </p><p class=\"fa-2024-services-description text-justify mb-0\"> Insurance is more than just a product - it&#39;s an investment in your future. However, the number of insurance products and providers is overwhelming, and you&#39;re not sure whom to trust. </p><p class=\"fa-2024-services-description text-justify mb-0\"> Our team of independent financial advisors will guide you in choosing the solution that is tailored to your life. Affordable and secure insurance that meets your needs is right within reach. </p><div class=\"align-self-center\"><button class=\"btn btn-lg fa-2024-btn-wide fs-5\" data-bs-toggle=\"modal\" data-bs-target=\"#appointmentModal\">Book an Appointment</button></div></div>", 2);
 function render(_ctx, _cache) {
-  return _hoisted_1;
+  var _component_Head = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Head");
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Head, {
+    title: "General Insurance ⋅ "
+  }), _hoisted_1], 64 /* STABLE_FRAGMENT */);
 }
 
 /***/ }),
@@ -439,9 +478,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
-var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<h1 class=\"finark-text-primary finark-fw-800 fs-1 lh-1\">Insurance Portfolio Review</h1><p class=\"fw-normal fs-5 m-0\">Get the most value out of your money</p><div class=\"row py-4 pb-5 justify-content-center align-items-center\"><div class=\"col-6\"><h2 class=\"finark-text-primary fw-bold fs-3 mb-5 lh-1\">An effective insurance portfolio bridges the gap between where you are and where you want to be.</h2><p class=\"finark-text-primary fw-normal fs-5 text-justify\"> A portfolio review evaluates your current situation, identifies areas for improvement, and helps you take advantage of products that may not be available before. </p><br><p class=\"finark-text-primary fw-normal fs-5 text-justify\"> Our job is to help you ensure that you&#39;re getting the most out of your poftfolio, and your job is to take control of your future. </p></div><div class=\"col-6\"><img class=\"w-100\" src=\"/storage/images/services/3.png\"></div></div><div class=\"d-flex justify-content-between\"><div><p class=\"finark-text-primary fw-bold fs-5 mb-0 lh-1\">For your information</p><p class=\"fw-normal\">We love to hear from you</p></div><div><button class=\"btn btn-lg finark-bg-primary rounded-pill text-white fs-6\" data-bs-toggle=\"modal\" data-bs-target=\"#appointmentModal\">Book an Appointment</button></div><div><p class=\"finark-text-primary fw-normal mb-0\">Share with friends</p><p><a class=\"finark-default-link text-white\" href=\"https://www.facebook.com/FinancialArk\" target=\"_blank\"><img src=\"/storage/images/social-icons/facebook.png\" width=\"32\"></a><a class=\"finark-default-link text-white\" href=\"https://www.linkedin.com/company/finarkgroup/\" target=\"_blank\"><img src=\"/storage/images/social-icons/linkedin.png\" width=\"32\"></a><a class=\"finark-default-link text-white\" href=\"https://wa.me/6591813260\" target=\"_blank\"><img src=\"/storage/images/social-icons/whatsapp.png\" width=\"32\"></a><a class=\"finark-default-link text-white\" href=\"https://www.youtube.com/@FinancialArk\" target=\"_blank\"><img src=\"/storage/images/social-icons/youtube.png\" width=\"32\"></a><a class=\"finark-default-link text-white\" href=\"https://www.instagram.com/finark.advisory/\" target=\"_blank\"><img src=\"/storage/images/social-icons/instagram.png\" width=\"32\"></a></p></div></div>", 4);
+var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"fa-2024-services-card-active fa-2024-bg-s3\"><div class=\"fa-2024-bg-overlay-active\"></div><div class=\"fa-2024-services-card-active-content\"><h4>Insurance Portfolio Review</h4><h6 class=\"text-truncate\">Get the most value out of your money</h6></div></div><div class=\"mt-5 p-4 d-flex flex-column justify-content-center\" style=\"gap:2.5rem;\"><p class=\"fa-2024-services-description text-justify mb-0\"> An effective insurance portfolio bridges the gap between where you are and where you want to be. </p><p class=\"fa-2024-services-description text-justify mb-0\"> A portfolio review evaluates your current situation, identifies areas for improvement, and helps you take advantage of products that may not be available before. </p><p class=\"fa-2024-services-description text-justify mb-0\"> Our job is to help you ensure that you&#39;re getting the most out of your portfolio, and your job is to take control of your future. </p><div class=\"align-self-center\"><button class=\"btn btn-lg fa-2024-btn-wide fs-5\" data-bs-toggle=\"modal\" data-bs-target=\"#appointmentModal\">Book an Appointment</button></div></div>", 2);
 function render(_ctx, _cache) {
-  return _hoisted_1;
+  var _component_Head = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Head");
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Head, {
+    title: "Insurance Portfolio Review ⋅ "
+  }), _hoisted_1], 64 /* STABLE_FRAGMENT */);
 }
 
 /***/ }),
@@ -458,9 +500,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
-var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<h1 class=\"finark-text-primary finark-fw-800 fs-1 lh-1\">Investment Advisory</h1><p class=\"fw-normal fs-5 m-0\">Ensure a secure financial future with tailored investment plans that work for you</p><div class=\"row py-4 pb-5 justify-content-center align-items-center\"><div class=\"col-6\"><h2 class=\"finark-text-primary fw-bold fs-3 mb-5 lh-1\">It&#39;s time to take the next step and make your money work for you.</h2><p class=\"finark-text-primary fw-normal fs-5 text-justify\"> Making the right investments will take you closer to achieving your life goals and building a comfortable future for you and your family.<br><br> Our financial experts can help you plan a secure investment strategy. Let them investigate your goals and risk appetite, the compile a bespoke plan to meet your individual needs. </p></div><div class=\"col-6\"><img class=\"w-100\" src=\"/storage/images/services/7.png\"></div></div><div class=\"d-flex justify-content-between\"><div><p class=\"finark-text-primary fw-bold fs-5 mb-0 lh-1\">For your information</p><p class=\"fw-normal\">We love to hear from you</p></div><div><button class=\"btn btn-lg finark-bg-primary rounded-pill text-white fs-6\" data-bs-toggle=\"modal\" data-bs-target=\"#appointmentModal\">Book an Appointment</button></div><div><p class=\"finark-text-primary fw-normal mb-0\">Share with friends</p><p><a class=\"finark-default-link text-white\" href=\"https://www.facebook.com/FinancialArk\" target=\"_blank\"><img src=\"/storage/images/social-icons/facebook.png\" width=\"32\"></a><a class=\"finark-default-link text-white\" href=\"https://www.linkedin.com/company/finarkgroup/\" target=\"_blank\"><img src=\"/storage/images/social-icons/linkedin.png\" width=\"32\"></a><a class=\"finark-default-link text-white\" href=\"https://wa.me/6591813260\" target=\"_blank\"><img src=\"/storage/images/social-icons/whatsapp.png\" width=\"32\"></a><a class=\"finark-default-link text-white\" href=\"https://www.youtube.com/@FinancialArk\" target=\"_blank\"><img src=\"/storage/images/social-icons/youtube.png\" width=\"32\"></a><a class=\"finark-default-link text-white\" href=\"https://www.instagram.com/finark.advisory/\" target=\"_blank\"><img src=\"/storage/images/social-icons/instagram.png\" width=\"32\"></a></p></div></div>", 4);
+var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"fa-2024-services-card-active fa-2024-bg-s7\"><div class=\"fa-2024-bg-overlay-active\"></div><div class=\"fa-2024-services-card-active-content\"><h4>Investment Advisory</h4><h6 class=\"text-truncate\">Ensure a secure financial future with tailored<br>investment plans that work for you</h6></div></div><div class=\"mt-5 p-4 d-flex flex-column justify-content-center\" style=\"gap:2.5rem;\"><p class=\"fa-2024-services-description text-justify mb-0\"> It&#39;s time to take the next step and make your money work for you. </p><p class=\"fa-2024-services-description text-justify mb-0\"> Making the right investments will take you closer to achieving your life goals and building a comfortable future for you and your family. </p><p class=\"fa-2024-services-description text-justify mb-0\"> Our financial experts can help you plan a secure investment strategy. Let them investigate your goals and risk appetite, the compile a bespoke plan to meet your individual needs. </p><div class=\"align-self-center\"><button class=\"btn btn-lg fa-2024-btn-wide fs-5\" data-bs-toggle=\"modal\" data-bs-target=\"#appointmentModal\">Book an Appointment</button></div></div>", 2);
 function render(_ctx, _cache) {
-  return _hoisted_1;
+  var _component_Head = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Head");
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Head, {
+    title: "Investment Advisory ⋅ "
+  }), _hoisted_1], 64 /* STABLE_FRAGMENT */);
 }
 
 /***/ }),
@@ -477,9 +522,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
-var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<h1 class=\"finark-text-primary finark-fw-800 fs-1 lh-1\">Loan Advisory</h1><p class=\"fw-normal fs-5 m-0\">Manage your debts with advisors you can trust</p><div class=\"row py-4 pb-5 justify-content-center align-items-center\"><div class=\"col-6\"><h2 class=\"finark-text-primary fw-bold fs-3 mb-5 lh-1\">Plies of debt with high interest rates are a major concern for lots of people.</h2><p class=\"finark-text-primary fw-normal fs-5 text-justify\"> The numbers can be mind-boggling. The monthly payments are worrying. The threat of bankruptcy is real.<br><br> Debt is not inevitable. There are options that can help you manage your existing loans, consolidate your debts and take out new loans at better rates.<br> We can help you have more control over your finances and achieve financial stability. </p></div><div class=\"col-6\"><img class=\"w-100\" src=\"/storage/images/services/6.png\"></div></div><div class=\"d-flex justify-content-between\"><div><p class=\"finark-text-primary fw-bold fs-5 mb-0 lh-1\">For your information</p><p class=\"fw-normal\">We love to hear from you</p></div><div><button class=\"btn btn-lg finark-bg-primary rounded-pill text-white fs-6\" data-bs-toggle=\"modal\" data-bs-target=\"#appointmentModal\">Book an Appointment</button></div><div><p class=\"finark-text-primary fw-normal mb-0\">Share with friends</p><p><a class=\"finark-default-link text-white\" href=\"https://www.facebook.com/FinancialArk\" target=\"_blank\"><img src=\"/storage/images/social-icons/facebook.png\" width=\"32\"></a><a class=\"finark-default-link text-white\" href=\"https://www.linkedin.com/company/finarkgroup/\" target=\"_blank\"><img src=\"/storage/images/social-icons/linkedin.png\" width=\"32\"></a><a class=\"finark-default-link text-white\" href=\"https://wa.me/6591813260\" target=\"_blank\"><img src=\"/storage/images/social-icons/whatsapp.png\" width=\"32\"></a><a class=\"finark-default-link text-white\" href=\"https://www.youtube.com/@FinancialArk\" target=\"_blank\"><img src=\"/storage/images/social-icons/youtube.png\" width=\"32\"></a><a class=\"finark-default-link text-white\" href=\"https://www.instagram.com/finark.advisory/\" target=\"_blank\"><img src=\"/storage/images/social-icons/instagram.png\" width=\"32\"></a></p></div></div>", 4);
+var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"fa-2024-services-card-active fa-2024-bg-s6\"><div class=\"fa-2024-bg-overlay-active\"></div><div class=\"fa-2024-services-card-active-content\"><h4>Loan Advisory</h4><h6 class=\"text-truncate\">Manage your debts with advisors you can trust</h6></div></div><div class=\"mt-5 p-4 d-flex flex-column justify-content-center\" style=\"gap:2.5rem;\"><p class=\"fa-2024-services-description text-justify mb-0\"> Plies of debt with high interest rates are a major concern for lots of people. </p><p class=\"fa-2024-services-description text-justify mb-0\"> The numbers can be mind-boggling. The monthly payments are worrying. The threat of bankruptcy is real. </p><p class=\"fa-2024-services-description text-justify mb-0\"> Debt is not inevitable. There are options that can help you manage your existing loans, consolidate your debts and take out new loans at better rates.We can help you have more control over your finances and achieve financial stability. </p><div class=\"align-self-center\"><button class=\"btn btn-lg fa-2024-btn-wide fs-5\" data-bs-toggle=\"modal\" data-bs-target=\"#appointmentModal\">Book an Appointment</button></div></div>", 2);
 function render(_ctx, _cache) {
-  return _hoisted_1;
+  var _component_Head = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Head");
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Head, {
+    title: "Loan Advisory ⋅ "
+  }), _hoisted_1], 64 /* STABLE_FRAGMENT */);
 }
 
 /***/ }),
@@ -496,9 +544,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
-var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<h1 class=\"finark-text-primary finark-fw-800 fs-1 lh-1\">Retirement Planning</h1><p class=\"fw-normal fs-5\">Sit back and enjoy your golden years</p><div class=\"row py-4 pb-5 justify-content-center align-items-center\"><div class=\"col-6\"><h2 class=\"finark-text-primary fw-bold fs-3 mb-5 lh-1\">Everyone needs to save for retirement, but many don&#39;t start until it&#39;s too late.</h2><p class=\"finark-text-primary fw-normal fs-5 text-justify\"> With the sheer number of products available, coupled with the economic challenges we face, retirement planning can be a daunting task.<br><br> That&#39;s why our advisors are here to help; we assist you in creating a plan that is suited to your present situation and future goals. You&#39;ve worked hard all your life. Now it&#39;s time to relax and reap the rewards. </p></div><div class=\"col-6\"><img class=\"w-100\" src=\"/storage/images/services/5.png\"></div></div><div class=\"d-flex justify-content-between\"><div><p class=\"finark-text-primary fw-bold fs-5 mb-0 lh-1\">For your information</p><p class=\"fw-normal\">We love to hear from you</p></div><div><button class=\"btn btn-lg finark-bg-primary rounded-pill text-white fs-6\" data-bs-toggle=\"modal\" data-bs-target=\"#appointmentModal\">Book an Appointment</button></div><div><p class=\"finark-text-primary fw-normal mb-0\">Share with friends</p><p><a class=\"finark-default-link text-white\" href=\"https://www.facebook.com/FinancialArk\" target=\"_blank\"><img src=\"/storage/images/social-icons/facebook.png\" width=\"32\"></a><a class=\"finark-default-link text-white\" href=\"https://www.linkedin.com/company/finarkgroup/\" target=\"_blank\"><img src=\"/storage/images/social-icons/linkedin.png\" width=\"32\"></a><a class=\"finark-default-link text-white\" href=\"https://wa.me/6591813260\" target=\"_blank\"><img src=\"/storage/images/social-icons/whatsapp.png\" width=\"32\"></a><a class=\"finark-default-link text-white\" href=\"https://www.youtube.com/@FinancialArk\" target=\"_blank\"><img src=\"/storage/images/social-icons/youtube.png\" width=\"32\"></a><a class=\"finark-default-link text-white\" href=\"https://www.instagram.com/finark.advisory/\" target=\"_blank\"><img src=\"/storage/images/social-icons/instagram.png\" width=\"32\"></a></p></div></div>", 4);
+var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"fa-2024-services-card-active fa-2024-bg-s5\"><div class=\"fa-2024-bg-overlay-active\"></div><div class=\"fa-2024-services-card-active-content\"><h4>Retirement Planning</h4><h6 class=\"text-truncate\">Sit back and enjoy your golden years</h6></div></div><div class=\"mt-5 p-4 d-flex flex-column justify-content-center\" style=\"gap:2.5rem;\"><p class=\"fa-2024-services-description text-justify mb-0\"> Everyone needs to save for retirement, but many don&#39;t start until it&#39;s too late. </p><p class=\"fa-2024-services-description text-justify mb-0\"> With the sheer number of products available, coupled with the economic challenges we face, retirement planning can be a daunting task. </p><p class=\"fa-2024-services-description text-justify mb-0\"> That&#39;s why our advisors are here to help; we assist you in creating a plan that is suited to your present situation and future goals. You&#39;ve worked hard all your life. Now it&#39;s time to relax and reap the rewards. </p><div class=\"align-self-center\"><button class=\"btn btn-lg fa-2024-btn-wide fs-5\" data-bs-toggle=\"modal\" data-bs-target=\"#appointmentModal\">Book an Appointment</button></div></div>", 2);
 function render(_ctx, _cache) {
-  return _hoisted_1;
+  var _component_Head = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Head");
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Head, {
+    title: "Retirement Planning ⋅ "
+  }), _hoisted_1], 64 /* STABLE_FRAGMENT */);
 }
 
 /***/ }),
@@ -515,9 +566,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
-var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<h1 class=\"finark-text-primary finark-fw-800 fs-1 lh-1\">Savings and Investment Plans</h1><p class=\"fw-normal fs-5 m-0\">Secure your future with our expert advice</p><div class=\"row mt--3 pb-5 justify-content-center align-items-center\"><div class=\"col-6\"><h2 class=\"finark-text-primary fw-bold fs-3 mb-5 lh-1\">Getting started with your savings and investments With so many options, it&#39;s hard to know where to start.</h2><p class=\"finark-text-primary fw-normal fs-5 text-justify\"> Our advisors can take the guesswork out of planning for your future. We listen to you, we provide you with options that are best for you, and based on our mutual goals, we can tailor the most comprehensive personalized savings &amp; investment strategy. </p></div><div class=\"col-6\"><img class=\"w-100\" src=\"/storage/images/services/4.png\"></div></div><div class=\"d-flex justify-content-between\"><div><p class=\"finark-text-primary fw-bold fs-5 mb-0 lh-1\">For your information</p><p class=\"fw-normal\">We love to hear from you</p></div><div><button class=\"btn btn-lg finark-bg-primary rounded-pill text-white fs-6\" data-bs-toggle=\"modal\" data-bs-target=\"#appointmentModal\">Book an Appointment</button></div><div><p class=\"finark-text-primary fw-normal mb-0\">Share with friends</p><p><a class=\"finark-default-link text-white\" href=\"https://www.facebook.com/FinancialArk\" target=\"_blank\"><img src=\"/storage/images/social-icons/facebook.png\" width=\"32\"></a><a class=\"finark-default-link text-white\" href=\"https://www.linkedin.com/company/finarkgroup/\" target=\"_blank\"><img src=\"/storage/images/social-icons/linkedin.png\" width=\"32\"></a><a class=\"finark-default-link text-white\" href=\"https://wa.me/6591813260\" target=\"_blank\"><img src=\"/storage/images/social-icons/whatsapp.png\" width=\"32\"></a><a class=\"finark-default-link text-white\" href=\"https://www.youtube.com/@FinancialArk\" target=\"_blank\"><img src=\"/storage/images/social-icons/youtube.png\" width=\"32\"></a><a class=\"finark-default-link text-white\" href=\"https://www.instagram.com/finark.advisory/\" target=\"_blank\"><img src=\"/storage/images/social-icons/instagram.png\" width=\"32\"></a></p></div></div>", 4);
+var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"fa-2024-services-card-active fa-2024-bg-s4\"><div class=\"fa-2024-bg-overlay-active\"></div><div class=\"fa-2024-services-card-active-content\"><h4>Savings and Investment Plans</h4><h6 class=\"text-truncate\">Secure your future with our expert advice.</h6></div></div><div class=\"mt-5 p-4 d-flex flex-column justify-content-center\" style=\"gap:2.5rem;\"><p class=\"fa-2024-services-description text-justify mb-0\"> Getting started with your savings and investments With so many options, it&#39;s hard to know where to start. </p><p class=\"fa-2024-services-description text-justify mb-0\"> Our advisors can take the guesswork out of planning for your future. We listen to you, we provide you with options that are best for you, and based on our mutual goals, we can tailor the most comprehensive personalized savings &amp; investment strategy. </p><div class=\"align-self-center\"><button class=\"btn btn-lg fa-2024-btn-wide fs-5\" data-bs-toggle=\"modal\" data-bs-target=\"#appointmentModal\">Book an Appointment</button></div></div><h1 class=\"finark-text-primary finark-fw-800 fs-1 lh-1\">Savings and Investment Plans</h1><p class=\"fw-normal fs-5 m-0\">Secure your future with our expert advice</p><div class=\"row mt--3 pb-5 justify-content-center align-items-center\"><div class=\"col-6\"><h2 class=\"finark-text-primary fw-bold fs-3 mb-5 lh-1\">Getting started with your savings and investments With so many options, it&#39;s hard to know where to start.</h2><p class=\"finark-text-primary fw-normal fs-5 text-justify\"> Our advisors can take the guesswork out of planning for your future. We listen to you, we provide you with options that are best for you, and based on our mutual goals, we can tailor the most comprehensive personalized savings &amp; investment strategy. </p></div><div class=\"col-6\"><img class=\"w-100\" src=\"/storage/images/services/4.png\"></div></div><div class=\"d-flex justify-content-between\"><div><p class=\"finark-text-primary fw-bold fs-5 mb-0 lh-1\">For your information</p><p class=\"fw-normal\">We love to hear from you</p></div><div><button class=\"btn btn-lg finark-bg-primary rounded-pill text-white fs-6\" data-bs-toggle=\"modal\" data-bs-target=\"#appointmentModal\">Book an Appointment</button></div><div><p class=\"finark-text-primary fw-normal mb-0\">Share with friends</p><p><a class=\"finark-default-link text-white\" href=\"https://www.facebook.com/FinancialArk\" target=\"_blank\"><img src=\"/storage/images/social-icons/facebook.png\" width=\"32\"></a><a class=\"finark-default-link text-white\" href=\"https://www.linkedin.com/company/finarkgroup/\" target=\"_blank\"><img src=\"/storage/images/social-icons/linkedin.png\" width=\"32\"></a><a class=\"finark-default-link text-white\" href=\"https://wa.me/6591813260\" target=\"_blank\"><img src=\"/storage/images/social-icons/whatsapp.png\" width=\"32\"></a><a class=\"finark-default-link text-white\" href=\"https://www.youtube.com/@FinancialArk\" target=\"_blank\"><img src=\"/storage/images/social-icons/youtube.png\" width=\"32\"></a><a class=\"finark-default-link text-white\" href=\"https://www.instagram.com/finark.advisory/\" target=\"_blank\"><img src=\"/storage/images/social-icons/instagram.png\" width=\"32\"></a></p></div></div>", 6);
 function render(_ctx, _cache) {
-  return _hoisted_1;
+  var _component_Head = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Head");
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Head, {
+    title: "Savings and Investment Plans ⋅ "
+  }), _hoisted_1], 64 /* STABLE_FRAGMENT */);
 }
 
 /***/ }),
@@ -694,102 +748,6 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     icon: "fa-brands fa-whatsapp",
     "class": "finark-services-btn-icon"
   }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Call on Whatsapp ")])])])])])])])], 2112 /* STABLE_FRAGMENT, DEV_ROOT_FRAGMENT */);
-}
-
-/***/ }),
-
-/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Shared/Layouts/Services.vue?vue&type=template&id=3fac8ec0":
-/*!**********************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Shared/Layouts/Services.vue?vue&type=template&id=3fac8ec0 ***!
-  \**********************************************************************************************************************************************************************************************************************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   render: () => (/* binding */ render)
-/* harmony export */ });
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
-
-var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("meta", {
-  "head-key": "description",
-  name: "description",
-  content: "We provide quality financial advice and competitive financial products and solutions our clients - serving in our clients' needs."
-}, null, -1 /* HOISTED */);
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("meta", {
-  "head-key": "author",
-  name: "author",
-  content: "John Vincent Bonza - Full Stack Developer - Infinity Solutions former Infinity Brackets"
-}, null, -1 /* HOISTED */);
-var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("meta", {
-  "head-key": "keywords",
-  name: "keywords",
-  content: "financial, advisory, insurance, partners, life, finark, clients, solutions, financial advisory, insurance partners, we provide, advisory practice, financial consultants, support them, advisory firm"
-}, null, -1 /* HOISTED */);
-var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("meta", {
-  "head-key": "social-title",
-  property: "og:title",
-  content: "FinArk ⋅ Transforming the way financial advisory is done"
-}, null, -1 /* HOISTED */);
-var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("meta", {
-  "head-key": "social-description",
-  property: "og:description",
-  content: "We provide quality financial advice and competitive financial products and solutions our clients - serving in our clients' needs."
-}, null, -1 /* HOISTED */);
-var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("meta", {
-  "head-key": "social-image",
-  property: "og:image",
-  content: "http://fin-ark.com/storage/images/backgrounds/landing-image.jpeg"
-}, null, -1 /* HOISTED */);
-var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("meta", {
-  "head-key": "social-url",
-  property: "og:url",
-  content: "http://fin-ark.com/"
-}, null, -1 /* HOISTED */);
-var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("meta", {
-  "head-key": "social-type",
-  property: "og:type",
-  content: "website"
-}, null, -1 /* HOISTED */);
-var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("meta", {
-  "head-key": "twitter-title",
-  property: "twitter:title",
-  content: "FinArk ⋅ Transforming the way financial advisory is done"
-}, null, -1 /* HOISTED */);
-var _hoisted_10 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("meta", {
-  "head-key": "twitter-description",
-  property: "twitter:description",
-  content: "We provide quality financial advice and competitive financial products and solutions our clients - serving in our clients' needs."
-}, null, -1 /* HOISTED */);
-var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("meta", {
-  "head-key": "twitter-image",
-  property: "twitter:image",
-  content: "http://fin-ark.com/storage/images/backgrounds/landing-image.jpeg"
-}, null, -1 /* HOISTED */);
-var _hoisted_12 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("meta", {
-  content: "summary_large_image",
-  name: "twitter:card"
-}, null, -1 /* HOISTED */);
-var _hoisted_13 = {
-  "class": "finark-bg-default"
-};
-var _hoisted_14 = {
-  "class": "main-content"
-};
-var _hoisted_15 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "header pt-5 pb-4 bg-landing-image-7"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"separator separator-bottom separator-skew zindex-100\" style=\"height: 100px !important;\">\r\n                <svg x=\"0\" y=\"0\" viewBox=\"0 0 2560 100\" preserveAspectRatio=\"none\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\">\r\n                    <polygon class=\"fill-default\" points=\"2560 0 2560 100 0 100\"></polygon>\r\n                </svg>\r\n            </div> ")], -1 /* HOISTED */);
-
-function render(_ctx, _cache, $props, $setup, $data, $options) {
-  var _component_Head = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Head");
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Head, null, {
-    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Main meta tags "), _hoisted_1, _hoisted_2, _hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Social media meta tags "), _hoisted_4, _hoisted_5, _hoisted_6, _hoisted_7, _hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Twitter meta tags "), _hoisted_9, _hoisted_10, _hoisted_11, _hoisted_12];
-    }),
-    _: 1 /* STABLE */
-  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("body", _hoisted_13, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_14, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Header"])]), _hoisted_15, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderSlot)(_ctx.$slots, "default"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Footer"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["AppointmentModal"], {
-    minDate: this.$page.props.minDate,
-    page: this.$page.props.page
-  }, null, 8 /* PROPS */, ["minDate", "page"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["FeedbackModal"])])], 64 /* STABLE_FRAGMENT */);
 }
 
 /***/ }),
@@ -1153,33 +1111,6 @@ if (false) {}
 
 /***/ }),
 
-/***/ "./resources/js/Shared/Layouts/Services.vue":
-/*!**************************************************!*\
-  !*** ./resources/js/Shared/Layouts/Services.vue ***!
-  \**************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _Services_vue_vue_type_template_id_3fac8ec0__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Services.vue?vue&type=template&id=3fac8ec0 */ "./resources/js/Shared/Layouts/Services.vue?vue&type=template&id=3fac8ec0");
-/* harmony import */ var _Services_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Services.vue?vue&type=script&setup=true&lang=js */ "./resources/js/Shared/Layouts/Services.vue?vue&type=script&setup=true&lang=js");
-/* harmony import */ var C_xampp_htdocs_clients_finark_laravel_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
-
-
-
-
-;
-const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_clients_finark_laravel_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_Services_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Services_vue_vue_type_template_id_3fac8ec0__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Shared/Layouts/Services.vue"]])
-/* hot reload */
-if (false) {}
-
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__exports__);
-
-/***/ }),
-
 /***/ "./resources/js/Pages/Service.vue?vue&type=script&setup=true&lang=js":
 /*!***************************************************************************!*\
   !*** ./resources/js/Pages/Service.vue?vue&type=script&setup=true&lang=js ***!
@@ -1206,21 +1137,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_AppointmentModal_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__["default"])
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_AppointmentModal_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./AppointmentModal.vue?vue&type=script&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Shared/Components/AppointmentModal.vue?vue&type=script&lang=js");
- 
-
-/***/ }),
-
-/***/ "./resources/js/Shared/Layouts/Services.vue?vue&type=script&setup=true&lang=js":
-/*!*************************************************************************************!*\
-  !*** ./resources/js/Shared/Layouts/Services.vue?vue&type=script&setup=true&lang=js ***!
-  \*************************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Services_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_0__["default"])
-/* harmony export */ });
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Services_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Services.vue?vue&type=script&setup=true&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Shared/Layouts/Services.vue?vue&type=script&setup=true&lang=js");
  
 
 /***/ }),
@@ -1401,21 +1317,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   render: () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_AppointmentModal_vue_vue_type_template_id_4fa3ee1b_scoped_true__WEBPACK_IMPORTED_MODULE_0__.render)
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_AppointmentModal_vue_vue_type_template_id_4fa3ee1b_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./AppointmentModal.vue?vue&type=template&id=4fa3ee1b&scoped=true */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Shared/Components/AppointmentModal.vue?vue&type=template&id=4fa3ee1b&scoped=true");
-
-
-/***/ }),
-
-/***/ "./resources/js/Shared/Layouts/Services.vue?vue&type=template&id=3fac8ec0":
-/*!********************************************************************************!*\
-  !*** ./resources/js/Shared/Layouts/Services.vue?vue&type=template&id=3fac8ec0 ***!
-  \********************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   render: () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Services_vue_vue_type_template_id_3fac8ec0__WEBPACK_IMPORTED_MODULE_0__.render)
-/* harmony export */ });
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Services_vue_vue_type_template_id_3fac8ec0__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Services.vue?vue&type=template&id=3fac8ec0 */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Shared/Layouts/Services.vue?vue&type=template&id=3fac8ec0");
 
 
 /***/ }),

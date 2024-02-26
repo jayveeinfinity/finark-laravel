@@ -17,7 +17,7 @@ class PartnersSeeder extends Seeder
     {
         
 
-        DB::table('partners')->delete();
+        // DB::table('partners')->delete();
         
         DB::table('partners')->insert(array (
             0 => 

@@ -1,5 +1,813 @@
 @import "_variables.scss";
 
+// 2024
+.fa-2024 {
+    &-header {
+        &-nav {
+            color: #A4ADCA;
+            font-family: $font-family;
+            font-size: 1.47219rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        
+            &:hover {
+                color: $main-color;
+            }
+        
+            &.active {
+                color: $main-color;
+            }
+
+            @media screen and (min-width: $laptop-l) {
+                font-size: 1.47219rem;
+            }
+            @media screen and (min-width: $mobile-s) and (max-width: $laptop-l) {
+                font-size: 1rem;
+            }
+            @media screen and (min-width: 0) and (max-width: calc($mobile-s - 1px)) {
+                font-size: 1rem;
+            }
+        }
+    }
+    &-nav {
+        &-btn {
+            border: 2.477px solid #214891;
+            color: #214891;
+        }
+
+        &-btn:hover {
+            color: white !important;
+            background-color: $main-color;
+        }
+    }
+    &-btn {
+        border-radius: 5.80569rem !important;
+        font-family: $font-family !important;
+        font-style: normal !important;
+
+        border: 1px solid #214891 !important;
+        color: #214891 !important;
+        transition: ease-in-out all 300ms;
+
+        &:hover {
+            color: white !important;
+            // background-color: $main-color;
+            background: linear-gradient(180deg, #214589 0%, #1A3163 100%);
+        }
+    }
+
+    &-btn-wide {
+        padding: 0.625rem 3rem !important;
+
+        border-radius: 5.80569rem !important;
+        font-family: $font-family !important;
+        font-style: normal !important;
+
+        border: 1px solid #214891 !important;
+        color: #214891 !important;
+        transition: ease-in-out all 300ms;
+
+        &:hover {
+            color: white !important;
+            // background-color: $main-color;
+            background: linear-gradient(180deg, #214589 0%, #1A3163 100%);
+        }
+    }
+
+    &-btn-wide-light {
+        padding: 0.625rem 3rem !important;
+
+        border-radius: 5.80569rem !important;
+        font-family: $font-family !important;
+        font-style: normal !important;
+
+        border: 1px solid white !important;
+        color: white !important;
+        transition: ease-in-out all 300ms;
+
+        &:hover {
+            color: $main-color !important;
+            border: 1px solid transparent !important;
+            background: linear-gradient(180deg, #F6F6FA 0%, #949BB2 100%);
+        }
+    }
+
+    &-btn-lg {
+        padding: 1rem 5rem !important;
+
+        border-radius: 5.80569rem !important;
+        font-family: $font-family !important;
+        font-size: 1.3rem !important;
+        font-style: normal !important;
+
+        border: 1px solid #214891 !important;
+        color: #214891 !important;
+        transition: ease-in-out all 300ms;
+
+        &:hover {
+            color: white !important;
+            background: linear-gradient(180deg, #214589 0%, #1A3163 100%);
+        }
+    }
+
+    &-footer {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2.4375rem;
+
+        h2 {
+            color: var(--White, #F6F6FA);
+            font-family: $font-family;
+            font-size: 1.875rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 0.33575rem;
+        }
+
+        p {
+            color: var(--White, #F6F6FA);
+            font-family: $font-family;
+            font-size: 1.41169rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 0.19763rem;
+            margin: 0;
+
+            > span {
+                color: var(--White, #F6F6FA);
+                font-family: $font-family;
+                font-size: 1.41169rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 0.19763rem;
+                text-decoration-line: underline;
+            }
+        }
+
+        &-sub {
+            div > p {
+                color: var(--White, #F6F6FA);
+                font-family: $font-family;
+                font-size: 1rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: 0.19763rem;
+                margin: 0;
+            }
+        }
+    }
+    // landing starts here
+    &-landing {
+        &-h1 {
+            color: var(--Black, #1D1F27);
+            text-align: center;
+            font-family: $font-family;
+            font-size: 4.59081rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 4.5rem;
+            
+            @media screen and (min-width: $laptop-l) {
+                font-size: 4.5rem;
+                line-height: 4rem;
+            }
+            @media screen and (min-width: $laptop) and (max-width: $laptop-l) {
+                font-size: 4rem;
+                line-height: 4rem;
+            }
+            @media screen and (min-width: $tablet) and (max-width: $laptop) {
+                font-size: 3rem;
+                line-height: 3rem;
+            }
+            @media screen and (min-width: $mobile-l) and (max-width: $tablet) {
+                font-size: 2.4rem;
+                line-height: 3rem;
+            }
+            @media screen and (min-width: $mobile-m) and (max-width: $mobile-l) {
+                font-size: 2.2rem;
+                line-height: 2.5rem;
+            }
+            @media screen and (min-width: $mobile-s) and (max-width: $mobile-m) {
+                font-size: 1.8rem;
+                line-height: 2rem;
+            }
+            @media screen and (min-width: 0) and (max-width: calc($mobile-s - 1px)) {
+                font-size: 1rem;
+                line-height: 1.5rem;
+            }
+        }
+        &-h1-alt {
+            color: $main-color;
+            text-align: center;
+            font-family: $font-family;
+            font-size: 10.89419rem;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 10rem;
+            
+            @media screen and (min-width: $laptop-l) {
+                font-size: 10.89419rem;
+                line-height: 10rem;
+            }
+            @media screen and (min-width: $laptop) and (max-width: $laptop-l) {
+                font-size: 10rem;
+                line-height: 9rem;
+            }
+            @media screen and (min-width: $tablet) and (max-width: $laptop) {
+                font-size: 8rem;
+                line-height: 7rem;
+            }
+            @media screen and (min-width: $mobile-l) and (max-width: $tablet) {
+                font-size: 6rem;
+                line-height: 5rem;
+            }
+            @media screen and (min-width: $mobile-m) and (max-width: $mobile-l) {
+                font-size: 4rem;
+                line-height: 3rem;
+            }
+            @media screen and (min-width: $mobile-s) and (max-width: $mobile-m) {
+                font-size: 3rem;
+                line-height: 2rem;
+            }
+            @media screen and (min-width: 0) and (max-width: calc($mobile-s - 1px)) {
+                font-size: 2rem;
+                line-height: 1.5rem;
+            }
+        }
+        &-h2 {
+            color: #1D1F27;
+            text-align: center;
+            font-family: $font-family;
+            font-size: 2.52313rem !important;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 0.35325rem;
+        }
+        &-bg-h {
+            height: 630px;
+
+            @media screen and (min-width: $laptop-l) {
+                height: 630px;
+            }
+            @media screen and (min-width: $laptop) and (max-width: $laptop-l) {
+                height: 530px;
+            }
+            @media screen and (min-width: $tablet) and (max-width: $laptop) {
+                height: 530px;
+            }
+            @media screen and (min-width: $mobile-l) and (max-width: $tablet) {
+                height: 430px;
+            }
+            @media screen and (min-width: $mobile-m) and (max-width: $mobile-l) {
+                height: 430px;
+            }
+            @media screen and (min-width: $mobile-s) and (max-width: $mobile-m) {
+                height: 330px;
+            }
+            @media screen and (min-width: 0) and (max-width: calc($mobile-s - 1px)) {
+                height: 330px;
+            }
+        }
+
+        &-promiseland {
+            &-bg {
+                background-color: #1B3768 !important; 
+            }
+
+            &-p {
+                color: var(--White, #F6F6FA);
+                font-family: $font-family;
+                font-size: 2.1875rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+
+            &-p2 {
+                color: var(--White, #F6F6FA);
+                text-align: justify;
+                font-family: $font-family;
+                font-size: 1.875rem;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+            }
+        }
+
+        &-obp-p {
+            color: var(--Black, #1D1F27);
+            text-align: justify;
+            font-family: $font-family;
+            font-size: 2.1875rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 153%; /* 3.34688rem */
+        }
+
+        &-partners {
+            &-bp-title {
+                color: #193462;
+                text-align: center;
+                font-family: $font-family;
+                font-size: 2.348rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+            &-bp-line {
+                width: 100%;
+                height: 0.25731rem;
+                background: #A4ADCA;
+            }
+            > h2 {
+                color: #19315B;
+                text-align: center;
+                font-family: $font-family;
+                font-size: 3.602rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+            > p {
+                color: var(--Black, #1D1F27);
+                text-align: center;
+                font-family: $font-family;
+                font-size: 1.801rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+        &-quote {
+            &-p {
+                color: #FFF;
+                text-align: center;
+                font-family: $font-family;
+                font-size: 5.15869rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+    }
+    &-aboutus {
+        &-objectives {
+            h2 {
+                color: var(--Black, #1D1F27);
+                text-align: center;
+                font-family: Lato;
+                font-size: 4rem;
+                font-style: normal;
+                font-weight: 900;
+                line-height: normal;
+            }
+            h3 {
+                color: var(--Grey, #A4ADCA);
+                text-align: center;
+                font-family: Lato;
+                font-size: 2rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+            &-card {
+                height: 100%;
+                border-radius: 1.875rem;
+                background: #D8E2F2;
+
+                h4 {
+                    color: var(--Black, #1D1F27);
+                    text-align: center;
+                    font-family: Lato;
+                    font-size: 1.8rem;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    letter-spacing: 0.35325rem;
+                    text-transform: uppercase;
+                }
+
+                p {
+                    color: var(--Text-Grey, #747887);
+                    text-align: justify;
+                    font-family: Lato;
+                    font-size: 1.5rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 2.5rem;
+                }
+            }
+        }
+        &-wawlf {
+            color: var(--White, #F6F6FA);
+            font-family: Lato;
+            font-size: 4rem;
+            font-style: normal;
+            font-weight: 900;
+            line-height: normal;
+
+            &-text {
+                color: var(--White, #F6F6FA);
+                text-align: justify;
+                font-family: Lato;
+                font-size: 1.5rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+
+                span {
+                    color: var(--White, #F6F6FA);
+                    font-family: Lato;
+                    font-size: 1.5rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+        }
+        &-leader {
+            &-text {
+                color: var(--Black, #1D1F27);
+                text-align: center;
+                font-family: Lato;
+                font-size: 2rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 0.35325rem;
+                text-transform: uppercase;
+            }
+            &-h2 {
+                color: var(--Black, #1D1F27);
+                text-align: center;
+                font-family: Lato;
+                font-size: 4rem;
+                font-style: normal;
+                font-weight: 900;
+                line-height: normal;
+            }
+            &-card {
+                &-group {
+                    margin-bottom: 0 !important;
+                    color: var(--Black, #1D1F27);
+                    text-align: center;
+                    font-family: Lato;
+                    font-size: 0.759794rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 0.13969rem;
+                    text-transform: uppercase;
+                }
+                &-name {
+                    margin-bottom: 0 !important;
+                    color: var(--Black, #1D1F27);
+                    text-align: center;
+                    font-family: Lato;
+                    font-size: 1.40338rem;
+                    font-style: normal;
+                    font-weight: 800;
+                    line-height: normal;
+                    letter-spacing: 0.3365rem;
+                }
+                &-details {
+                    margin-bottom: 0 !important;
+                    color: var(--Black, #1D1F27);
+                    text-align: center;
+                    font-family: Lato;
+                    font-size: 1rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+            &-modal {
+                &-lg {
+                    max-width: 1336px !important;
+
+                    @media screen and (min-width: $tablet) {
+                        max-width: 1336px !important;
+                    }
+                    @media screen and (min-width: $mobile-l) and (max-width: $tablet) {
+                        max-width: 750px !important;
+                    }
+                    @media screen and (min-width: $mobile-m) and (max-width: $mobile-l) {
+                        max-width: 750px !important;
+                    }
+                    @media screen and (min-width: $mobile-s) and (max-width: $mobile-m) {
+                        width: 100%;
+                    }
+                    @media screen and (min-width: 0) and (max-width: calc($mobile-s - 1px)) {
+                        width: 100%;
+                    }
+                }
+                h3 {
+                    color: var(--White, #F6F6FA);
+                    font-family: Lato;
+                    font-size: 1.8rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 0.30688rem;
+                    text-transform: uppercase;
+                }
+                h1 {
+                    color: var(--White, #F6F6FA);
+                    font-family: Lato;
+                    font-size: 5rem;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                }
+                p {
+                    color: var(--White, #F6F6FA);
+                    text-align: left;
+                    font-family: Lato;
+                    font-size: 2rem;
+                    font-style: normal;
+                    font-weight: 400;
+                }
+                &-details {
+                    color: var(--White, #F6F6FA);
+                    text-align: justify;
+                    font-family: Lato;
+                    font-size: 1.875rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 153%;
+                }
+            }
+        }
+    }
+    &-events {
+        &-card {
+            &-date {
+                color: var(--Text-Grey, #747887);
+                font-family: Lato;
+                font-size: 1rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: 0.22744rem;
+            }
+            &-name {
+                color: var(--Black, #1D1F27);
+                font-family: Lato;
+                font-size: 1.2rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: 0.22744rem;
+            }
+            &-map {
+                &-icon {
+                    width: 0.6875rem;
+                    height: 0.9375rem;
+                    flex-shrink: 0;
+                }
+                &-name {
+                    color: var(--Blue, #1034A7);
+                    font-family: Lato;
+                    font-size: 1.25rem;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    letter-spacing: 0.175rem;
+                }
+            }
+            &-new {
+                color: #FFF;
+                text-align: center;
+                font-family: Lato;
+                font-size: 2.09838rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                text-transform: uppercase;
+                
+                &-icon {
+                    width: 3rem;
+                    height: 3rem;
+                    flex-shrink: 0;
+                }
+            }
+        }
+    }
+    &-blogs {
+        &-card {
+            &-services {
+                color: var(--White, #F6F6FA);
+                text-align: center !important;
+                font-family: Lato;
+                font-size: 0.9rem !important;
+                font-style: normal;
+                font-weight: 400 !important;
+                line-height: normal !important;
+                letter-spacing: 0.17794rem;
+            }
+            &-name {
+                color: var(--Black, #1D1F27);
+                font-family: Lato;
+                font-size: 1.4rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: 0.22744rem;
+            }
+            &-description {
+                color: var(--Text-Grey, #747887);
+                text-align: justify;
+                font-family: Lato;
+                font-size: 1.2rem;
+                font-style: normal;
+                font-weight: 400;
+            }
+        }
+    }
+    &-services {
+        &-card-active {
+            position: relative;
+            height: 30rem !important;
+            border-radius: 1.5rem;
+            margin: 10px;
+            transition: 0.25s ease-in;
+
+            &-content {
+                position: absolute;
+                bottom: 25px;
+                left: 30px;
+
+                h4 {
+                    color: var(--White, #F6F6FA);
+                    font-family: Lato;
+                    font-size: 3rem;
+                    font-style: normal;
+                    font-weight: 800;
+                    line-height: normal;
+                }
+
+                h6 {
+                    color: var(--White, #F6F6FA);
+                    font-family: Lato;
+                    font-size: 1.3rem;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    letter-spacing: 0.35rem;
+                }
+            }
+        }
+
+        &-description {
+            color: var(--Text-Grey, #747887);
+            text-align: justify;
+            font-family: Lato;
+            font-size: 2rem;
+            font-style: normal;
+            font-weight: 600;
+        }
+        &-quote {
+            color: #FFF;
+            text-align: center;
+            font-family: Lato;
+            font-size: 4rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+
+            span {
+                color: #FFF;
+                font-family: Lato;
+                font-size: 4rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+            
+            &-alt {
+                color: #FFF;
+                text-align: center;
+                font-family: Lato;
+                font-size: 1.5rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+
+        &-social-icon {
+            width: 2rem;
+            height: 2rem;
+            color: #C6CDD8 !important;
+        }
+    }
+}
+.finark {
+    &-landing-h2 {
+        color: #1D1F27;
+        text-align: center;
+        font-family: $font-family;
+        font-size: 2.52313rem !important;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.35325rem;
+    }
+
+    &-landing-about {
+        &-p {
+            text-align: center;
+            font-family: $font-family;
+            font-size: 2.1875rem !important;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        &-p2 {
+            color: #1D1F27;
+            text-align: center;
+            font-family: $font-family;
+            font-size: 1.875rem !important;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+        &-button {
+            color: #1D1F27;
+            text-align: center;
+            font-family: $font-family;
+            font-size: 1.875rem !important;
+        }
+    }
+
+    &-landing-our-approach {
+        border-radius: 2.6515rem;
+        background: #FFFFFF;
+        box-shadow: 0px 4.242px 4.242px 0px rgba(0, 0, 0, 0.25);
+
+        &-blockquote h4 {
+            color: var($main-color, #1034A7);
+            text-align: center;
+            font-family: $font-family;
+            font-size: 1.65181rem;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+            letter-spacing: 0.24775rem;
+        }
+
+        &-blockquote p {
+            color: var(--Black, #1D1F27);
+            text-align: justify;
+            font-family: $font-family;
+            font-size: 1.10963rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 160%; /* 1.77538rem */
+            letter-spacing: 0.15538rem;
+        }
+    }
+    &-landing-featured-h2 {
+        font-size: 2.5rem;
+        line-height: 3rem;
+        
+        @media screen and (min-width: $laptop-l) {
+            font-size: 2.5rem;
+            line-height: 3rem;
+        }
+        @media screen and (min-width: $laptop) and (max-width: $laptop-l) {
+            font-size: 2.5rem;
+            line-height: 3rem;
+        }
+        @media screen and (min-width: $tablet) and (max-width: $laptop) {
+            font-size: 2.3rem;
+            line-height: 2.5rem;
+        }
+        @media screen and (min-width: $mobile-l) and (max-width: $tablet) {
+            font-size: 1.9rem;
+            line-height: 2.5rem;
+        }
+        @media screen and (min-width: $mobile-m) and (max-width: $mobile-l) {
+            font-size: 1.7rem;
+            line-height: 2rem;
+        }
+        @media screen and (min-width: $mobile-s) and (max-width: $mobile-m) {
+            font-size: 1.8rem;
+            line-height: 2rem;
+        }
+        @media screen and (min-width: 0) and (max-width: calc($mobile-s - 1px)) {
+            font-size: 1rem;
+            line-height: 1.5rem;
+        }
+    }
+}
 .finark-vh-100 {
     height: 100vh !important;
 }
@@ -56,7 +864,7 @@
             rgba(214,51,132, 0.5), transparent 50%
         );  
 }
-.finark-bg-overlay-wwhite {
+.finark-bg-overlay-white {
     background-color: rgba(255,255,255,0.1);
 }
 .finark-bg-overlay {
@@ -95,72 +903,6 @@
 
     @media screen and (min-width: 0) and (max-width: 992px) {
         text-shadow: none !important;
-    }
-}
-.finark-landing-featured-h1 {
-    font-size: 4.5rem;
-    line-height: 4rem;
-    
-    @media screen and (min-width: $laptop-l) {
-        font-size: 4.5rem;
-        line-height: 4rem;
-    }
-    @media screen and (min-width: $laptop) and (max-width: $laptop-l) {
-        font-size: 4rem;
-        line-height: 4rem;
-    }
-    @media screen and (min-width: $tablet) and (max-width: $laptop) {
-        font-size: 3rem;
-        line-height: 3rem;
-    }
-    @media screen and (min-width: $mobile-l) and (max-width: $tablet) {
-        font-size: 2.4rem;
-        line-height: 3rem;
-    }
-    @media screen and (min-width: $mobile-m) and (max-width: $mobile-l) {
-        font-size: 2.2rem;
-        line-height: 2.5rem;
-    }
-    @media screen and (min-width: $mobile-s) and (max-width: $mobile-m) {
-        font-size: 1.8rem;
-        line-height: 2rem;
-    }
-    @media screen and (min-width: 0) and (max-width: calc($mobile-s - 1px)) {
-        font-size: 1rem;
-        line-height: 1.5rem;
-    }
-}
-.finark-landing-featured-h2 {
-    font-size: 2.5rem;
-    line-height: 3rem;
-    
-    @media screen and (min-width: $laptop-l) {
-        font-size: 2.5rem;
-        line-height: 3rem;
-    }
-    @media screen and (min-width: $laptop) and (max-width: $laptop-l) {
-        font-size: 2.5rem;
-        line-height: 3rem;
-    }
-    @media screen and (min-width: $tablet) and (max-width: $laptop) {
-        font-size: 2.3rem;
-        line-height: 2.5rem;
-    }
-    @media screen and (min-width: $mobile-l) and (max-width: $tablet) {
-        font-size: 1.9rem;
-        line-height: 2.5rem;
-    }
-    @media screen and (min-width: $mobile-m) and (max-width: $mobile-l) {
-        font-size: 1.7rem;
-        line-height: 2rem;
-    }
-    @media screen and (min-width: $mobile-s) and (max-width: $mobile-m) {
-        font-size: 1.8rem;
-        line-height: 2rem;
-    }
-    @media screen and (min-width: 0) and (max-width: calc($mobile-s - 1px)) {
-        font-size: 1rem;
-        line-height: 1.5rem;
     }
 }
 .finark-landing-featured-p {
@@ -234,6 +976,9 @@
 }
 .text-finark {
     color: $main-color !important;
+}
+.text-finark-alt {
+    color: $main-color-alt !important;
 }
 .carousel-caption {
     padding: 0px 10px;
@@ -454,8 +1199,8 @@
 	border-radius: 1rem;
 
     h2 {
-        font-size: 3rem;
-        text-shadow: 2px 2px 1px #fff;
+        // font-size: 3rem;
+        // text-shadow: 2px 2px 1px #fff;
     }
     > .bp-icon {
         position: relative;
@@ -468,18 +1213,19 @@
         img {
             position: absolute;
             left: 0;
-            width: 100%;
+            // width: 100%;
             height: 100%;
             object-fit: cover;
             object-position: 50% 50%;
         }
     }
     p {
-        margin-top: 1rem;
-        font-size: 1.25rem;
-        line-height: 1.5rem;
-        font-weight: 500;
-        text-shadow: 2px 2px 1px #fff;
+        // commented for version 2 UI only
+        // margin-top: 1rem;
+        // font-size: 1.25rem;
+        // line-height: 1.5rem;
+        // font-weight: 500;
+        // text-shadow: 2px 2px 1px #fff;
     }
     @media screen and (min-width: 404px) and (max-width: 523px) {
         h2 {

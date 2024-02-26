@@ -1,9 +1,130 @@
 <template>
     <Head title="Careers &sdot; " />
-    <div class="container my-5">
-        <h1 class="finark-fw-800 text-uppercase mb-5">Looking for a job?</h1>
+    <div class="pt-8 pb-0 bg-white">
+        <div class="container-xxl container-xl container-lg container-md container-sm pt-5">
+            <div class="text-center pt-8 pb-5 fa-2024-bg-aboutus" style="position: relative; height: 25rem;">
+                <div class="position-absolute px-5 pb-4" style="bottom: 0;">
+                    <h2 class="text-start text-uppercase" style="color: #F6F6FA;font-family: Lato;font-size: 3.5rem;font-style: normal;font-weight: 900;line-height: normal;">
+                        CAREERS
+                    </h2>
+                    <p style="color: #F6F6FA; font-family: Lato; font-size: 2rem; font-style: normal; font-weight: 400; line-height: normal;">
+                        Come join our growing team of advisors! Both new and experienced.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-xxl container-xl container-lg container-md container-sm my-7">
+        <p class="mb-1" style="color: var(--Grey, #A4ADCA);
+text-align: center;
+font-family: Lato;
+font-size: 2rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;">
+                Embarking on a new journey?
+        </p>
+        <h1 style="color: var(--Black, #1D1F27);
+text-align: center;
+font-family: Lato;
+font-size: 3.5rem;
+font-style: normal;
+font-weight: 900;
+line-height: normal;">Join us in the world of financial services!</h1>
         <!-- <div class="finark-landing-separator rounded mb-4"></div> -->
         <div class="row">
+            <div class="col-12">
+                <div class="d-flex flex-column py-6">
+                    <div class="d-flex flex-row" style="background-image: url('storage/images/backgrounds/Group 28.png');">
+                        <div>
+                            <img src="storage/images/backgrounds/unsplash_Lks7vei-eAg.png">
+                        </div>
+                        <h3 class="w-100 text-center align-self-center" style="color: var(--White, #F6F6FA);
+        font-family: Lato;
+        font-size: 3rem;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;">New Advisors
+        <div class="px-2 d-inline-block" style="border-radius: 2.99344rem;
+        background: var(--White, #F6F6FA);
+        color: var(--Navy-Blue, #1B3768);
+        text-align: center;
+        font-family: Lato;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 153%; /* 1.7175rem */">Activitely Hiring</div>
+        </h3>
+                    </div>
+                    <div class="py-5">
+                        <p style="color: var(--Text-Grey, #747887);
+        text-align: justify;
+        font-family: Lato;
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 3rem">
+                            Calling All Seasoned Advisors: Elevate Your Practice with Us!
+                            <br><br>
+                            Are you an experienced agent or consultant ready to reach the next step of success as a producer?Working in an Independent Financial Advisor, you’ll enjoy a heightened competitive edge, with the freedom to compare financial products across a range of providers, ensuring that you can back your advice with the best-in-class solutions.
+                            <br>
+                            We provide coaching and guidance from experienced industry practitioners to support you to greater productivity. Our competitive banding model would mean that you receive higher remuneration for your work efforts.
+                            <br>
+                            Our philosophy is all about empowering you. Apart from regulatory requirements, we provide the autonomy to conduct your practice as you see fit - the freedom to manage your time in accordance to your priorities.
+                            <br>
+                            Join us and enhance your experience of life. Experience the liberty, support, and reward you deserve as a leading financial advisor.
+                        </p>
+                        <div class="mt-6 text-center">
+                            <a class="btn fa-2024-btn-wide" href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#applyModal" @click="SetSelectedPosition('NewAdvisor')">Apply now!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="d-flex flex-column py-6">
+                    <div class="d-flex flex-row" style="background-image: url('storage/images/backgrounds/Group 28.png');">
+                        <div>
+                            <img src="storage/images/backgrounds/unsplash_Lks7vei-eAg.png">
+                        </div>
+                        <h3 class="w-100 text-center align-self-center" style="color: var(--White, #F6F6FA);
+        font-family: Lato;
+        font-size: 3rem;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;">Experienced Advisors
+        <div class="px-2 d-inline-block" style="border-radius: 2.99344rem;
+        background: var(--White, #F6F6FA);
+        color: var(--Navy-Blue, #1B3768);
+        text-align: center;
+        font-family: Lato;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 153%; /* 1.7175rem */">Activitely Hiring</div>
+        </h3>
+                    </div>
+                    <div class="py-5">
+                        <p style="color: var(--Text-Grey, #747887);
+        text-align: justify;
+        font-family: Lato;
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 3rem">
+                            As a newcomer looking to establish yourself, we know how crucial it is to have the right support. That's why we offer an excellent learning environment where you will be mentored by established industry professionals whom will shortcut your learning curve.
+                            <br>
+                            To expedite your professional growth, we provide a rich resource library of meticulously curated training videos, quality content and financial advisory formats. Our aim is to ensure you're fully equipped to navigate the financial services landscape with confidence.
+                            <br>
+                            We also understand the challenges of entering a new field as it has been shown that ~70% of new consultants transition out of the industry within the first five years. To acknowledge your efforts and dedication during your exploratory phase, we give you full vesting income. This rare benefit guarantees that you retain the rewards of your effort, even if you subsequently decide that the financial services industry isn't your calling.
+                            <br>
+                            Join us, and experience the power of a supportive professional environment, rich learning resources, and a rewards system that truly respects your contributions. Your journey towards becoming a successful financial consultant starts here!
+                        </p>
+                        <div class="mt-6 text-center">
+                            <a class="btn fa-2024-btn-wide" href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#applyModal" @click="SetSelectedPosition('ExperiencedConsultant')">Apply now!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <!-- <div class="col-4 mb-4">
                 <img class="finark-careers w-100 shadow-lg" src="/storage/images/careers/1.jpg">
             </div>
@@ -25,14 +146,14 @@
             <div class="col-4 mb-4">
                 <img class="finark-careers w-100 shadow-lg" src="/storage/images/careers/7.jpg">
             </div> -->
-            <div class="col-lg-12 mb-3">
+            <!-- <div class="col-lg-12 mb-3">
                 <div class="card shadow rounded d-flex flex-row">
-                    <!-- <div class="p-5 finark-bg-primary rounded align-self-stretch d-lg-block d-none">
+                    <div class="p-5 finark-bg-primary rounded align-self-stretch d-lg-block d-none">
                         <h1 class="fs-1 text-white">8th</h1>
                         <p class="text-light text-center">Aug 8</p>
-                    </div> -->
+                    </div>
                     <div class="p-5">
-                        <!-- <span class="badge finark-bg-primary d-lg-none d-sm-inline-block">8th Aug 2023</span> -->
+                        <span class="badge finark-bg-primary d-lg-none d-sm-inline-block">8th Aug 2023</span>
                         <h1 class="text-uppercase fw-bold">New Consultants</h1>
                         <p class="font-weight-400">
                             "Embarking on a New Journey? Join Us in the World of Financial Services!<br><br>
@@ -41,22 +162,13 @@
                             We also understand the challenges of entering a new field as it has been shown that ~70% of new consultants transition out of the industry within the first five years. To acknowledge your efforts and dedication during your exploratory phase, we give you full vesting income. This rare benefit guarantees that you retain the rewards of your effort, even if you subsequently decide that the financial services industry isn't your calling.<br><br>
                             Join us, and experience the power of a supportive professional environment, rich learning resources, and a rewards system that truly respects your contributions. Your journey towards becoming a successful financial consultant starts here!"
                         </p>
-                        <!-- <p class="font-weight-400">
-                            <FontAwesomeIcon icon="fa-solid fa-location-dot" class="text-finark" /> <a href="https://gdg.community.dev/events/details/google-gdg-manila-presents-google-io-extended-manila-2022/#event-info">FinArk, Singapore</a>
-                        </p> -->
                         <button class="btn btn-lg finark-bg-primary rounded-pill text-white" data-bs-toggle="modal" data-bs-target="#applyModal" @click="SetSelectedPosition('NewConsultant')">Apply now!</button>
-                        <!-- <button class="btn text-primary">View details</button> -->
                     </div>
                 </div>
             </div>
             <div class="col-lg-12 mb-3">
                 <div class="card shadow rounded d-flex flex-row">
-                    <!-- <div class="p-5 finark-bg-primary rounded align-self-stretch d-lg-block d-none">
-                        <h1 class="fs-1 text-white">8th</h1>
-                        <p class="text-light text-center">Aug 8</p>
-                    </div> -->
                     <div class="p-5">
-                        <!-- <span class="badge finark-bg-primary d-lg-none d-sm-inline-block">8th Aug 2023</span> -->
                         <h1 class="text-uppercase fw-bold">Experienced Consultants</h1>
                         <p class="font-weight-400">
                             "Calling All Seasoned Consultants: Elevate Your Practice with Us!<br><br>
@@ -66,22 +178,18 @@
                             Our philosophy is all about empowering you. Apart from regulatory requirements, we provide the autonomy to conduct your practice as you see fit - the freedom to manage your time in accordance to your priorities.<br><br>
                             Join us and enhance your experience of life. Experience the liberty, support, and reward you deserve as a leading financial consultant."
                         </p>
-                        <!-- <p class="font-weight-400">
-                            <FontAwesomeIcon icon="fa-solid fa-location-dot" class="text-finark" /> <a href="https://gdg.community.dev/events/details/google-gdg-manila-presents-google-io-extended-manila-2022/#event-info">FinArk, Singapore</a>
-                        </p> -->
                         <button class="btn btn-lg finark-bg-primary rounded-pill text-white" data-bs-toggle="modal" data-bs-target="#applyModal" @click="SetSelectedPosition('ExperiencedConsultant')">Apply now!</button>
-                        <!-- <button class="btn text-primary">View details</button> -->
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-12 mb-3">
+            </div> -->
+            <!-- <div class="col-lg-12 mb-3">
                 <div class="card shadow rounded d-flex flex-row">
-                    <!-- <div class="p-5 finark-bg-primary rounded align-self-stretch d-lg-block d-none">
+                    <div class="p-5 finark-bg-primary rounded align-self-stretch d-lg-block d-none">
                         <h1 class="fs-1 text-white">8th</h1>
                         <p class="text-light text-center">Aug 8</p>
-                    </div> -->
+                    </div>
                     <div class="p-5">
-                        <!-- <span class="badge finark-bg-primary d-lg-none d-sm-inline-block">8th Aug 2023</span> -->
+                        <span class="badge finark-bg-primary d-lg-none d-sm-inline-block">8th Aug 2023</span>
                         <h1 class="text-uppercase fw-bold">Team Leader</h1>
                         <p class="font-weight-400">
                             "Step Up to Leadership: Building Your Team Towards Your Definition of Success”<br><br>
@@ -90,14 +198,14 @@
                             Most importantly, we structure our partnership model to ensure that the path to be a director is clear, as long as you can meet the requirements and that you will not be suppressed or shortchanged for your efforts. <br><br>
                             Take the next step in your leadership journey with us and open up a world of possibilities for yourself and your team."
                         </p>
-                        <!-- <p class="font-weight-400">
+                        <p class="font-weight-400">
                             <FontAwesomeIcon icon="fa-solid fa-location-dot" class="text-finark" /> <a href="https://gdg.community.dev/events/details/google-gdg-manila-presents-google-io-extended-manila-2022/#event-info">FinArk, Singapore</a>
-                        </p> -->
+                        </p>
                         <button class="btn btn-lg finark-bg-primary rounded-pill text-white" data-bs-toggle="modal" data-bs-target="#applyModal" @click="SetSelectedPosition('TeamLeader')">Apply now!</button>
-                        <!-- <button class="btn text-primary">View details</button> -->
+                        <button class="btn text-primary">View details</button>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- Modal -->
             <div class="modal fade" id="applyModal" tabindex="-1" aria-labelledby="applyModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
@@ -157,6 +265,12 @@
             </div>
         </div>
     </div>
+    <!-- # QUOTE SECTION -->
+    <div class="container-fluid fa-2024-bg-landing-quote">
+        <div class="py-7">
+            <p class="fa-2024-landing-quote-p">Your success is only one step away</p>
+        </div>
+    </div>
 </template>
 
 <script>
@@ -208,13 +322,13 @@
             },
             SubmitForm(e) {
                 var formData = new FormData();
-                // formData.append('name', this.name);
-                // formData.append('email', this.email);
-                // formData.append('position', this.position);
+                formData.append('name', this.name);
+                formData.append('email', this.email);
+                formData.append('position', this.position);
                 
-                formData.append('name', "John Vincent Bonza");
-                formData.append('email', "jayveeinfinity@gmail.com");
-                formData.append('position', "New Consultant");
+                // formData.append('name', "John Vincent Bonza");
+                // formData.append('email', "jayveeinfinity@gmail.com");
+                // formData.append('position', "New Consultant");
                 if(this.file != null) {
                     formData.append('file', this.file);
                 }
@@ -269,7 +383,7 @@
         },
         computed: {
             ModalTitle() {
-                return (this.position == 'NewConsultant' ? 'new consultant' : (this.position == 'ExperiencedConsultant' ? 'experienced consultant' : 'team leader'))
+                return (this.position == 'NewAdvisor' ? 'new advisor' : 'experienced consultant')
             }
         },
         layout: Landing
