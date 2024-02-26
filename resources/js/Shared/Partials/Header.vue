@@ -1,3 +1,5 @@
+
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 <template>
     <!-- <div class="container-fluid finark-bg-primary">
         <div class="container pt-2 pb-1 px-4 text-white d-flex justify-content-end align-items-center">
@@ -19,13 +21,13 @@
             </a>
         </div>
     </div> -->
-    <nav class="navbar navbar-top navbar-horizontal navbar-expand-lg navbar-dark" style="top: -8px;">
-        <div class="container-xxl container-xl container-lg container-md container-sm px-4">
+    <nav class="navbar navbar-top navbar-horizontal navbar-expand-lg navbar-dark mt-lg-3 mt-md-0">
+        <div class="container-xxl container-xl container-lg container-md container-sm">
             <a href="/">
-                <img src="/storage/images/brands/logo-banner-white.png" height="50">
+                <img src="/storage/images/brands/logo-banner.png" style="height: 5.125rem;">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-collapse-main" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <FontAwesomeIcon icon="fa-solid fa-bars" class="finark-text-primary" style="font-size: 3rem !important;" />
             </button>
             <div class="collapse navbar-collapse" id="navbar-collapse-main">
                 <!-- Collapse header -->
@@ -38,56 +40,46 @@
                         </div>
                         <div class="col-6 collapse-close">
                             <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse-main" aria-controls="sidenav-main" aria-expanded="false" aria-label="Toggle sidenav">
-                                <span></span>
-                                <span></span>
+                                <span class="finark-bg-primary"></span>
+                                <span class="finark-bg-primary"></span>
                             </button>
                         </div>
                     </div>
                 </div>
                 <!-- Navbar items -->
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav ml-auto" style="gap: 1rem;">
                     <li class="nav-item">
                         <a class="nav-link nav-link-icon" href="/">
-                            <span class="nav-link-inner--text fw-bold finark-text-shadow-nav">Home</span>
+                            <span class="nav-link-inner--text fw-bold fa-2024-header-nav" :class="$page.component == 'Landing' ? 'active' : ''">Home</span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link nav-link-icon" href="/about">
-                            <span class="nav-link-inner--text fw-bold finark-text-shadow-nav">About Us</span>
+                            <span class="nav-link-inner--text fw-bold fa-2024-header-nav" :class="$page.component == 'About' ? 'active' : ''">About Us</span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link nav-link-icon" href="/services">
-                            <span class="nav-link-inner--text fw-bold finark-text-shadow-nav">Services</span>
+                            <span class="nav-link-inner--text fw-bold fa-2024-header-nav" :class="$page.component == 'Services' ? 'active' : ''">Services</span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link nav-link-icon" href="/events">
-                            <span class="nav-link-inner--text fw-bold finark-text-shadow-nav">Events</span>
+                            <span class="nav-link-inner--text fw-bold fa-2024-header-nav" :class="$page.component == 'Events' ? 'active' : ''">Events</span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link nav-link-icon" href="/blogs">
-                            <span class="nav-link-inner--text fw-bold finark-text-shadow-nav">Blogs</span>
+                            <span class="nav-link-inner--text fw-bold fa-2024-header-nav" :class="$page.component == 'Blogs' ? 'active' : ''">Blogs</span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link nav-link-icon" href="/careers">
-                            <span class="nav-link-inner--text fw-bold finark-text-shadow-nav">Careers</span>
+                            <span class="nav-link-inner--text fw-bold fa-2024-header-nav" :class="$page.component == 'Careers' ? 'active' : ''">Careers</span>
                         </a>
                     </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link nav-link-icon" href="/contacts">
-                            <span class="nav-link-inner--text">Contact Us</span>
-                        </a>
-                    </li>
-                    <li class="nav-item bg-white rounded">
-                        <a class="nav-link nav-link-icon" href="/signin">
-                            <FontAwesomeIcon icon="fa-solid fa-right-to-bracket" class=" text-dark" />
-                            <span class="nav-link-inner--text text-dark">Sign in</span>
-                        </a>
-                    </li> -->
                 </ul>
+                <a class="btn fa-2024-btn-wide px-lg-4 px-5 d-lg-inline-block d-block mt-lg-0 mt-3 ms-lg-3 ms-0" href="/signin">Log In</a>
             </div>
         </div>
     </nav>

@@ -16,7 +16,7 @@ class CreatePartnerGroupsTable extends Migration
         Schema::create('partner_groups', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('icon', 100);
+            $table->string('icon', 100)->nullable();
             $table->integer('sequence');
             $table->boolean('active')->default(true);
             $table->integer('created_by');

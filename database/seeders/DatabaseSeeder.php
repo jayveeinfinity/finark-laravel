@@ -13,7 +13,6 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        
         $this->call(PartnersSeeder::class);
         $this->call(PartnerGroupsSeeder::class);
         $this->call(PartnerGroupReferencesSeeder::class);

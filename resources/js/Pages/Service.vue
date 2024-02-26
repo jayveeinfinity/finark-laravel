@@ -1,5 +1,5 @@
 <template>
-    <div class="container py-5">
+    <div class="container-xxl pt-7 pb-5">
         <div class="mt-lg-5 mt-4">
             <div v-if="page == 'financial-planning-adults'">
                 <FinancialPlanningAdults />
@@ -33,6 +33,35 @@
             </div>
         </div>
     </div>
+    <!-- # QUOTE SECTION -->
+    <div class="container-fluid fa-2024-bg-landing-quote">
+        <div class="container-xxl py-7">
+            <div class="d-flex flex-row justify-content-between">
+                <p class="fa-2024-services-quote">We would <span>love</span> to hear from you</p>
+                <div class="d-flex flex-column">
+                    <p class="fa-2024-services-quote-alt">Share with friends</p>
+                    <div class="d-flex flex-row align-items-center" style="gap: 1.5rem !important">
+                        <a class="finark-default-link" href="https://www.facebook.com/FinancialArk" target="_blank">
+                            <FontAwesomeIcon icon="fa-brands fa-square-facebook" class="fa-2024-services-social-icon" />
+                        </a>
+                        <a class="finark-default-link text-white" href="https://www.instagram.com/finark.advisory/" target="_blank">
+                            <FontAwesomeIcon icon="fa-brands fa-square-instagram" class="fa-2024-services-social-icon" />
+                        </a>
+                        <a class="finark-default-link text-white" href="https://wa.me/6591813260" target="_blank">
+                            <FontAwesomeIcon icon="fa-solid fa-envelope" class="fa-2024-services-social-icon" />
+                        </a>
+                        <a class="finark-default-link text-white" href="https://www.youtube.com/@FinancialArk" target="_blank">
+                            <FontAwesomeIcon icon="fa-brands fa-youtube" class="fa-2024-services-social-icon" />
+                        </a>
+                        <a class="finark-default-link" href="https://www.linkedin.com/company/finarkgroup/" target="_blank">
+                            <FontAwesomeIcon icon="fa-brands fa-linkedin" class="fa-2024-services-social-icon" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <AppointmentModal :minDate="this.$page.props.minDate" :page="this.$page.props.page" />
 </template>
 
 <script setup>
@@ -46,13 +75,14 @@
     import GeneralInsurance from './../Pages/Services/GeneralInsurance';
     import EstatePlanning from './../Pages/Services/EstatePlanning';
     import BusinessContinuity from './../Pages/Services/BusinessContinuity';
+      
+      import AppointmentModal from './../Shared/Components/AppointmentModal';
 </script>
-
 <script>
-    import ServicesLayout from './../Shared/Layouts/Services';
+    // import ServicesLayout from './../Shared/Layouts/Services';
 
     export default {
-        layout: ServicesLayout,
+        // layout: ServicesLayout,
         props: {
             page: String
         }
