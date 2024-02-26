@@ -11,8 +11,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _Shared_Layouts_Landing__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../Shared/Layouts/Landing */ "./resources/js/Shared/Layouts/Landing.vue");
-
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -48,8 +46,7 @@ __webpack_require__.r(__webpack_exports__);
     GetPartners: function GetPartners() {
       this.partners = this.$page.props.partners;
     }
-  },
-  layout: _Shared_Layouts_Landing__WEBPACK_IMPORTED_MODULE_0__["default"]
+  }
 });
 
 /***/ }),
@@ -67,10 +64,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 var _hoisted_1 = {
-  "class": "container py-5"
+  "class": "container pt-8 pb-5"
 };
 var _hoisted_2 = {
-  "class": "row"
+  "class": "row mt-5"
 };
 var _hoisted_3 = {
   "class": "col-12"

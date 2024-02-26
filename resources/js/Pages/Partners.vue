@@ -1,6 +1,6 @@
 <template>
-    <div class="container py-5">
-        <div class="row">
+    <div class="container pt-8 pb-5">
+        <div class="row mt-5">
             <div class="col-12">
                 <ul class="nav justify-content-center finark-business-partners">
                     <li class="nav-item" v-for="partner in partner_groups" :key="partner.id" :class="partner.isActive ? 'active' : ''">
@@ -23,8 +23,6 @@
 </template>
 
 <script>
-    import Landing from './../Shared/Layouts/Landing';
-
     export default {
         data() {
             return {
@@ -55,7 +53,6 @@
             GetPartners() {
                 this.partners = this.$page.props.partners;
             }
-        },
-        layout: Landing
+        }
     }
 </script>
