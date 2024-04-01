@@ -161,6 +161,33 @@
                 margin: 0;
             }
         }
+
+        a {
+            color: var(--White, #F6F6FA);
+            font-family: $font-family;
+            font-size: 1.41169rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 0.19763rem;
+            margin: 0;
+
+            > span {
+                color: var(--White, #F6F6FA);
+                font-family: $font-family;
+                font-size: 1.41169rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 0.19763rem;
+                text-decoration-line: underline;
+            }
+
+            &:hover {
+                color: var(--White, #F6F6FA);
+                opacity: 0.8;
+            }
+        }
     }
     // landing starts here
     &-landing {
@@ -493,7 +520,7 @@
                     max-width: 1336px !important;
 
                     @media screen and (min-width: $tablet) {
-                        max-width: 1336px !important;
+                        max-width: 1000px !important;
                     }
                     @media screen and (min-width: $mobile-l) and (max-width: $tablet) {
                         max-width: 750px !important;
@@ -671,7 +698,7 @@
             font-family: Lato;
             font-size: 2rem;
             font-style: normal;
-            font-weight: 600;
+            font-weight: 500;
         }
         &-quote {
             color: #FFF;

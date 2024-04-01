@@ -15,6 +15,10 @@ class LoginController extends Controller
      * Handle an authentication attempt.
      */
     public function index() {
+        if(Auth::check()) {
+            return redirect()->route('extranet.landing');
+        }
+
         return Inertia::render('Auth/SignIn');
     }
 

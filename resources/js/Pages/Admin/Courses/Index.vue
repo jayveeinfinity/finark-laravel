@@ -130,7 +130,7 @@
                                                         <p class="mb-1 text-sm text-dark font-weight-bold">{{ course.name }} <span class="badge badge-sm badge-danger" v-if="!course.visibility">Unlisted</span></p>
                                                         <p class="mb-0 text-xs text-secondary">{{ course.user.name }}</p>
                                                     </div>
-                                                    <p class="text-sm text-dark font-weight-bold ms-auto">{{ course.tag}}</p>
+                                                    <p class="text-sm text-dark font-weight-bold ms-auto">{{ course.tag }}</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -142,11 +142,17 @@
                                 <span class="badge badge-info me-3 text-dark"><FontAwesomeIcon icon="fa-solid fa-film" /> {{ course.videos.length }} episodes</span>
                                 <span class="badge badge-info me-3 text-dark"><FontAwesomeIcon icon="fa-solid fa-clock" /> {{ course.time_humans }}</span>
                                 <p class="p-2 mb-4 text-truncate-container" v-html="course.description" style="height: 200px;"></p>
-                                <a :href="'/admin/courses/' + course.id" class="btn btn-block finark-bg-primary text-white font-weight-semibold mt-auto w-100 mb-0 align-self-end">
-                                    <span v-if="helpers.hasRole('admin', 'developer')">View course</span>
-                                    <span v-if="!helpers.hasRole('admin', 'developer')">Watch course</span>
-                                    <i class="fas fa-eye text-sm ms-1"></i>
-                                </a>
+                                <div class="d-flex justify-content-between">
+                                    <a :href="'/admin/courses/' + course.id" class="btn finark-bg-primary text-white font-weight-semibold mt-auto mb-0">
+                                        <span v-if="helpers.hasRole('admin', 'developer')">View course</span>
+                                        <span v-if="!helpers.hasRole('admin', 'developer')">Watch course</span>
+                                        <i class="fas fa-eye text-sm ms-1"></i>
+                                    </a>
+                                    <a href="#" class="btn bg-danger text-white font-weight-semibold mt-auto mb-0" v-if="helpers.hasRole('admin', 'developer')">
+                                        Delete course
+                                        <i class="fas fa-trash text-sm ms-1"></i>
+                                    </a>
+                                </div>
                             </div>
                             <!-- <div class="col-xl-4 col-md-6 mb-xl-0 mb-4">
                                 <div class="card card-background border-radius-xl card-background-after-none align-items-start mb-4">

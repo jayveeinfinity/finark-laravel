@@ -1,8 +1,9 @@
 {
-    "/js/app.js": "/js/app.js?id=3a44e855aec46d799adb936b882d884c",
-    "/js/manifest.js": "/js/manifest.js?id=e74a87ff7152e7b9608178fab03bd666",
-    "/css/admin.css": "/css/admin.css?id=7b2f01cab43dfb993488837f95d637a3",
-    "/css/custom.css": "/css/custom.css?id=472aebc9fb7d22a12dff9d27696c17a8",
+    "/js/app.js": "/js/app.js?id=edfa356a69d3aef361d9549568401d68",
+    "/js/manifest.js": "/js/manifest.js?id=48ddb96ffb377c78098ac9c594281f39",
+    "/css/forum.css": "/css/forum.css?id=70d693e35a5a7ad4a94048f26225c419",
+    "/css/admin.css": "/css/admin.css?id=225df01a610ef7be738ce02bf7f990fe",
+    "/css/custom.css": "/css/custom.css?id=aaf590a08a990b4e833c3ec3566b37f2",
     "/css/app.css": "/css/app.css?id=3d716cf899efd96f9d0ab2b3d0be5d6e",
-    "/js/vendor.js": "/js/vendor.js?id=0d5080b524a85d6a52a13a099ecb8dd4"
+    "/js/vendor.js": "/js/vendor.js?id=c1d84010e27c646fb23da3ebefd2859d"
 }

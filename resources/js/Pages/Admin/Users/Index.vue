@@ -16,12 +16,12 @@
                   <!-- <button type="button" class="btn btn-sm btn-white me-2">
                     View all
                   </button> -->
-                  <a href="/admin/users/create" class="btn btn-sm btn-dark btn-icon d-flex align-items-center me-2">
+                  <Link href="/admin/users/create" class="btn btn-sm btn-dark btn-icon d-flex align-items-center me-2">
                     <span class="btn-inner--icon me-1">
                       <FontAwesomeIcon icon="fa-solid fa-user-plus" />
                     </span>
                     <span class="btn-inner--text">Add user</span>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
