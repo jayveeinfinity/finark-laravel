@@ -8,6 +8,7 @@ use App\Models\Partner;
 use App\Models\PartnerGroups;
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
+use App\Models\Event;
 use App\Models\PartnerGroupReferences;
 
 class LandingController extends Controller
@@ -79,11 +80,19 @@ class LandingController extends Controller
     }
 
     public function events() {
-        return Inertia::render('Events');
+        $events = Event::orderBy('date')->get();
+
+        return Inertia::render('Extranet/Events', [
+            'events' => $events
+        ]);
     }
 
     public function blogs() {
         return Inertia::render('Blogs');
+    }
+
+    public function blogShow() {
+        return Inertia::render('Extranet/Blog');
     }
 
     public function careers() {

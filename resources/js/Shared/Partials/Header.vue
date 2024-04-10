@@ -65,12 +65,12 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
                     </li>
                     <li class="nav-item">
                         <a class="nav-link nav-link-icon" href="/events">
-                            <span class="nav-link-inner--text fw-bold fa-2024-header-nav" :class="$page.component == 'Events' ? 'active' : ''">Events</span>
+                            <span class="nav-link-inner--text fw-bold fa-2024-header-nav" :class="$page.component == 'Extranet/Events' ? 'active' : ''">Events</span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link nav-link-icon" href="/blogs">
-                            <span class="nav-link-inner--text fw-bold fa-2024-header-nav" :class="$page.component == 'Blogs' ? 'active' : ''">Blogs</span>
+                            <span class="nav-link-inner--text fw-bold fa-2024-header-nav" :class="$page.component == 'Blogs'|| $page.component == 'Extranet/Blog'  ? 'active' : ''">Blogs</span>
                         </a>
                     </li>
                     <li class="nav-item">

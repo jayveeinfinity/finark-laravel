@@ -63,6 +63,12 @@ return [
             'url' => env('APP_URL').'/storage',
             'visibility' => 'public',
         ],
+        'event_posters' => [
+            'driver' => 'local',
+            'root' => storage_path('app/public/events/posters'),
+            'url' => env('APP_URL').'/storage',
+            'visibility' => 'public',
+        ],
         'videos' => [
             'driver' => 'local',
             'root' => storage_path('app/public/videos'),

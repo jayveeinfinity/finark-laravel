@@ -1593,9 +1593,9 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   }, "About Us", 2 /* CLASS */)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_12, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_13, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
     "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["nav-link-inner--text fw-bold fa-2024-header-nav", _ctx.$page.component == 'Services' || _ctx.$page.component == 'Service' ? 'active' : ''])
   }, "Services", 2 /* CLASS */)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_14, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_15, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
-    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["nav-link-inner--text fw-bold fa-2024-header-nav", _ctx.$page.component == 'Events' ? 'active' : ''])
+    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["nav-link-inner--text fw-bold fa-2024-header-nav", _ctx.$page.component == 'Extranet/Events' ? 'active' : ''])
   }, "Events", 2 /* CLASS */)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_16, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_17, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
-    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["nav-link-inner--text fw-bold fa-2024-header-nav", _ctx.$page.component == 'Blogs' ? 'active' : ''])
+    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["nav-link-inner--text fw-bold fa-2024-header-nav", _ctx.$page.component == 'Blogs' || _ctx.$page.component == 'Extranet/Blog' ? 'active' : ''])
   }, "Blogs", 2 /* CLASS */)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_18, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_19, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
     "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["nav-link-inner--text fw-bold fa-2024-header-nav", _ctx.$page.component == 'Careers' ? 'active' : ''])
   }, "Careers", 2 /* CLASS */)])])]), !$options.authorize() ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("a", _hoisted_20, "Log In")) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), $options.authorize() ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_21, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", _hoisted_22, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($options.username), 1 /* TEXT */), _hoisted_23])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])])])], 2112 /* STABLE_FRAGMENT, DEV_ROOT_FRAGMENT */);
@@ -2465,6 +2465,14 @@ var map = {
 		"/js/vendor",
 		"resources_js_Pages_Admin_Dashboard_Index_vue"
 	],
+	"./Admin/Events/Create": [
+		"./resources/js/Pages/Admin/Events/Create.vue",
+		"resources_js_Pages_Admin_Events_Create_vue"
+	],
+	"./Admin/Events/Create.vue": [
+		"./resources/js/Pages/Admin/Events/Create.vue",
+		"resources_js_Pages_Admin_Events_Create_vue"
+	],
 	"./Admin/Forum/Category": [
 		"./resources/js/Pages/Admin/Forum/Category.vue",
 		"/js/vendor",
@@ -2613,21 +2621,21 @@ var map = {
 		"./resources/js/Pages/Careers.vue",
 		"resources_js_Pages_Careers_vue"
 	],
-	"./Event": [
-		"./resources/js/Pages/Event.vue",
-		"resources_js_Pages_Event_vue"
+	"./Extranet/Blog": [
+		"./resources/js/Pages/Extranet/Blog.vue",
+		"resources_js_Pages_Extranet_Blog_vue"
 	],
-	"./Event.vue": [
-		"./resources/js/Pages/Event.vue",
-		"resources_js_Pages_Event_vue"
+	"./Extranet/Blog.vue": [
+		"./resources/js/Pages/Extranet/Blog.vue",
+		"resources_js_Pages_Extranet_Blog_vue"
 	],
-	"./Events": [
-		"./resources/js/Pages/Events.vue",
-		"resources_js_Pages_Events_vue"
+	"./Extranet/Events": [
+		"./resources/js/Pages/Extranet/Events.vue",
+		"resources_js_Pages_Extranet_Events_vue"
 	],
-	"./Events.vue": [
-		"./resources/js/Pages/Events.vue",
-		"resources_js_Pages_Events_vue"
+	"./Extranet/Events.vue": [
+		"./resources/js/Pages/Extranet/Events.vue",
+		"resources_js_Pages_Extranet_Events_vue"
 	],
 	"./Landing": [
 		"./resources/js/Pages/Landing.vue",

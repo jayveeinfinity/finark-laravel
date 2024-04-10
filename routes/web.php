@@ -18,7 +18,9 @@ use App\Http\Controllers\PartnerController;
 use App\Http\Controllers\FeedbackController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\WatchVideoController;
+use App\Http\Controllers\Intranet\EventController;
 use App\Http\Controllers\AppointmentController;
+use App\Http\Controllers\Extranet\EventController as ExtranetEventController;
 use App\Http\Controllers\Extranet\LandingController;
 use App\Http\Controllers\Intranet\DashboardController;
 
@@ -39,9 +41,9 @@ Route::get('/services', [LandingController::class, 'services']);
 Route::get('/services/{slug}', [LandingController::class, 'service']);
 Route::get('/events', [LandingController::class, 'events']);
 Route::get('/blogs', [LandingController::class, 'blogs']);
+Route::get('/blogs/show', [LandingController::class, 'blogShow']);
 Route::get('/careers', [LandingController::class, 'careers']);
 Route::get('/partners', [LandingController::class, 'partners']);
-
 Route::post('/appointment/timeslots', [AppointmentController::class, 'getAvailableTimeSlots']);
 
 Route::post('/appointment/store', [AppointmentController::class, 'store']);
@@ -119,6 +121,9 @@ Route::middleware('auth')->group(function() {
             Route::post('/videos/upload/chunks', [VideoController::class, 'uploadChunks']);
             
             Route::get('/clients', [ClientController::class, 'index']);
+
+            Route::get('/events/create', [EventController::class, 'create']);
+            Route::post('/events/store', [EventController::class, 'store']);
         });
 
 /*

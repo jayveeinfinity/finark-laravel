@@ -130,7 +130,7 @@
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div> -->
                                 <div class="modal-body py-4 px-5 text-white">
-                                    <FontAwesomeIcon class="float-end fs-3" icon="fa-solid fa-times" data-bs-dismiss="modal" aria-label="Close" />
+                                    <FontAwesomeIcon icon="fa-solid fa-times" class="float-end fs-3" style="cursor: pointer;" data-bs-dismiss="modal" aria-label="Close" />
                                     <div class="row mt-4">
                                         <div class="col-lg-6 col-12 d-flex flex-column fa-2024-aboutus-leader-modal">
                                             <div class="align-self-center">
