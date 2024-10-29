@@ -13,12 +13,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
-var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"fa-2024-services-card-active fa-2024-bg-s8\"><div class=\"fa-2024-bg-overlay-active\"></div><div class=\"fa-2024-services-card-active-content\"><h4>General Insurance</h4><h6 class=\"text-truncate\">Get peace of mind knowing you and your family are<br>secure with our trusted insurance advice</h6></div></div><div class=\"mt-5 p-4 d-flex flex-column justify-content-center\" style=\"gap:2.5rem;\"><p class=\"fa-2024-services-description text-justify mb-0\"> The right coverage, tailored to your needs </p><p class=\"fa-2024-services-description text-justify mb-0\"> Insurance is more than just a product - it&#39;s an investment in your future. However, the number of insurance products and providers is overwhelming, and you&#39;re not sure whom to trust. </p><p class=\"fa-2024-services-description text-justify mb-0\"> Our team of independent financial advisors will guide you in choosing the solution that is tailored to your life. Affordable and secure insurance that meets your needs is right within reach. </p><div class=\"align-self-center\"><button class=\"btn btn-lg fa-2024-btn-wide fs-5\" data-bs-toggle=\"modal\" data-bs-target=\"#appointmentModal\">Book an Appointment</button></div></div>", 2);
 function render(_ctx, _cache) {
   var _component_Head = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Head");
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Head, {
     title: "General Insurance ⋅ "
-  }), _hoisted_1], 64 /* STABLE_FRAGMENT */);
+  }), _cache[0] || (_cache[0] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"fa-2024-services-card-active fa-2024-bg-s8\"><div class=\"fa-2024-bg-overlay-active\"></div><div class=\"fa-2024-services-card-active-content\"><h4>General Insurance</h4><h6 class=\"text-truncate\">Get peace of mind knowing you and your family are<br>secure with our trusted insurance advice</h6></div></div><div class=\"mt-5 p-4 d-flex flex-column justify-content-center\" style=\"gap:2.5rem;\"><p class=\"fa-2024-services-description text-justify mb-0\"> The right coverage, tailored to your needs </p><p class=\"fa-2024-services-description text-justify mb-0\"> Insurance is more than just a product - it&#39;s an investment in your future. However, the number of insurance products and providers is overwhelming, and you&#39;re not sure whom to trust. </p><p class=\"fa-2024-services-description text-justify mb-0\"> Our team of independent financial advisors will guide you in choosing the solution that is tailored to your life. Affordable and secure insurance that meets your needs is right within reach. </p><div class=\"align-self-center\"><button class=\"btn btn-lg fa-2024-btn-wide fs-5\" data-bs-toggle=\"modal\" data-bs-target=\"#appointmentModal\">Book an Appointment</button></div></div>", 2))], 64 /* STABLE_FRAGMENT */);
 }
 
 /***/ }),
@@ -34,12 +33,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _GeneralInsurance_vue_vue_type_template_id_151b69aa__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./GeneralInsurance.vue?vue&type=template&id=151b69aa */ "./resources/js/Pages/Services/GeneralInsurance.vue?vue&type=template&id=151b69aa");
-/* harmony import */ var C_xampp_htdocs_clients_finark_laravel_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var D_xampp_htdocs_clients_finark_laravel_finark_laravel_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 const script = {}
 
 ;
-const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_clients_finark_laravel_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_1__["default"])(script, [['render',_GeneralInsurance_vue_vue_type_template_id_151b69aa__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Pages/Services/GeneralInsurance.vue"]])
+const __exports__ = /*#__PURE__*/(0,D_xampp_htdocs_clients_finark_laravel_finark_laravel_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_1__["default"])(script, [['render',_GeneralInsurance_vue_vue_type_template_id_151b69aa__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Pages/Services/GeneralInsurance.vue"]])
 /* hot reload */
 if (false) {}
 
