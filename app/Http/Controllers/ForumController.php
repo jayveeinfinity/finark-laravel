@@ -21,6 +21,19 @@ class ForumController extends Controller
     }
 
     /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function category()
+    {
+        Inertia::setRootView($this->rootView);
+
+        return Inertia::render('Admin/Forum/Category');
+    }
+
+    /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
@@ -47,9 +60,11 @@ class ForumController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show()
     {
-        //
+        Inertia::setRootView($this->rootView);
+
+        return Inertia::render('Admin/Forum/Show');
     }
 
     /**

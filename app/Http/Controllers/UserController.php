@@ -8,6 +8,7 @@ use App\Exports\UsersExport;
 use Illuminate\Http\Request;
 use Spatie\Permission\Models\Role;
 use App\Http\Resources\UserResource;
+use Illuminate\Support\Facades\Auth;
 use Maatwebsite\Excel\Facades\Excel;
 use App\Http\Requests\User\StoreUserRequest;
 use App\Http\Requests\User\UpdateUserRequest;
@@ -168,5 +169,26 @@ class UserController extends Controller
     public function export() 
     {
         return Excel::download(new UsersExport, 'users.xlsx');
+    }
+
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function profile()
+    {
+        $user = Auth::user();
+
+        if(!$user) {
+            return redirect('/signin');
+        }
+
+        Inertia::setRootView($this->layout);
+        
+        $user = new UserResource(User::with('roles', 'watchVideos')->findOrFail($user->id));
+
+        return Inertia::render('Admin/Users/Show', compact('user'));
     }
 }

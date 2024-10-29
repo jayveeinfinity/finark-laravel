@@ -20,7 +20,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     </Head>
     <body class="bg-white">
-        <AdminNav v-show="$page.props.auth != null" :username="username" />
+        <!-- <AdminNav v-show="$page.props.auth != null" :username="username" /> -->
         <div class="main-content">
             <Header />
         </div>

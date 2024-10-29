@@ -43,10 +43,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var date_fns__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! date-fns */ "./node_modules/date-fns/esm/format/index.js");
+/* harmony import */ var date_fns_tz__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! date-fns-tz */ "./node_modules/date-fns-tz/esm/index.js");
 
 var getCurrentTime = function getCurrentTime() {
-  return (0,date_fns__WEBPACK_IMPORTED_MODULE_0__["default"])(new Date(), 'h:mm:ss a');
+  return (0,date_fns_tz__WEBPACK_IMPORTED_MODULE_0__.formatInTimeZone)(new Date(), 'Asia/Singapore', 'h:mm:ss a');
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
@@ -147,11 +147,93 @@ __webpack_require__.r(__webpack_exports__);
 var _hoisted_1 = {
   "class": "container-fluid py-4 px-5"
 };
+var _hoisted_2 = {
+  "class": "row mt-4"
+};
+var _hoisted_3 = {
+  "class": "col-lg-9"
+};
+var _hoisted_4 = {
+  "class": "community-posts-wrapper bb-radius"
+};
+var _hoisted_5 = {
+  "class": "community-post style-two forum-item bug"
+};
+var _hoisted_6 = {
+  "class": "col-md-6 post-content"
+};
+var _hoisted_7 = {
+  "class": "author-avatar forum-icon text-center"
+};
+var _hoisted_8 = {
+  "class": "community-post style-two forum-item bug"
+};
+var _hoisted_9 = {
+  "class": "col-md-6 post-content"
+};
+var _hoisted_10 = {
+  "class": "author-avatar forum-icon text-center"
+};
+var _hoisted_11 = {
+  "class": "community-post style-two forum-item bug"
+};
+var _hoisted_12 = {
+  "class": "col-md-6 post-content"
+};
+var _hoisted_13 = {
+  "class": "author-avatar forum-icon text-center"
+};
+var _hoisted_14 = {
+  "class": "community-post style-two forum-item bug"
+};
+var _hoisted_15 = {
+  "class": "col-md-6 post-content"
+};
+var _hoisted_16 = {
+  "class": "author-avatar forum-icon text-center"
+};
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_Head = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Head");
+  var _component_FontAwesomeIcon = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("FontAwesomeIcon");
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Head, {
     title: "Forum ⋅ "
-  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["AdminHeader"])])], 64 /* STABLE_FRAGMENT */);
+  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["AdminHeader"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [_cache[8] || (_cache[8] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"answer-action shadow\"><div class=\"action-content\"><div class=\"image-wrap\"><img src=\"https://html-template.spider-themes.net/docy/img/home_support/answer.png\" alt=\"answer action\"></div><div class=\"content\"><h2 class=\"ans-title\">Can’t find an answer?</h2><p> Make use of a qualified tutor to get the answer </p></div></div><!-- /.action-content --><div class=\"action-button-container\"><a href=\"#\" class=\"action_btn btn-ans\">Ask a Question</a></div><!-- /.action-button-container --></div><div class=\"post-header forums-header\"><div class=\"col-md-6 col-sm-6 support-info\"><span> Forum </span></div><!-- /.support-info --><div class=\"col-md-6 col-sm-6 support-category-menus\"><ul class=\"forum-titles\"><li class=\"forum-topic-count\">Topics</li><li class=\"forum-reply-count\">Posts</li><li class=\"forum-freshness\">Last Post</li></ul></div><!-- /.support-category-menus --></div>", 2)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_FontAwesomeIcon, {
+    icon: "fa-solid fa-bullhorn",
+    "class": "text-danger fa-4xl"
+  })]), _cache[0] || (_cache[0] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+    "class": "entry-content"
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+    href: "/admin/forum/category"
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", {
+    "class": "post-title"
+  }, " Announcements ")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "This forum features announcements. If there is a new post in this forum, please check it out.")], -1 /* HOISTED */))]), _cache[1] || (_cache[1] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"col-md-6 post-meta-wrapper\"><ul class=\"forum-titles\"><li class=\"forum-topic-count\">10</li><li class=\"forum-reply-count\">105</li><li class=\"forum-freshness\"><div class=\"freshness-box\"><div class=\"freshness-top\"><div class=\"freshness-link\"><a href=\"#\" title=\"Reply To: Main Forum Rules &amp; Policies\">2 years, 2 months ago</a></div></div><div class=\"freshness-btm\"><a href=\"#\" title=\"View Eh Jewel&#39;s profile\" class=\"bbp-author-link\"></a><div class=\"freshness-name\"><a href=\"#\" title=\"View Eh Jewel&#39;s profile\" class=\"bbp-author-link\"></a><a href=\"#\" title=\"View Eh Jewel&#39;s profile\" class=\"bbp-author-link\"><span class=\"bbp-author-name\">Eh Jewel</span></a></div><span class=\"bbp-author-avatar\"><img alt=\"Eh Jewel\" src=\"https://html-template.spider-themes.net/docy/img/home_support/cp5.jpg\"></span></div></div></li></ul></div>", 1))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_FontAwesomeIcon, {
+    icon: "fa-solid fa-coffee",
+    "class": "text-success fa-4xl"
+  })]), _cache[2] || (_cache[2] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+    "class": "entry-content"
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+    href: "/admin/forum/category"
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", {
+    "class": "post-title"
+  }, " Breakfast Club ")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "Intention setting and sharing session.")], -1 /* HOISTED */))]), _cache[3] || (_cache[3] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"col-md-6 post-meta-wrapper\"><ul class=\"forum-titles\"><li class=\"forum-topic-count\">10</li><li class=\"forum-reply-count\">105</li><li class=\"forum-freshness\"><div class=\"freshness-box\"><div class=\"freshness-top\"><div class=\"freshness-link\"><a href=\"#\" title=\"Reply To: Main Forum Rules &amp; Policies\">2 years, 2 months ago</a></div></div><div class=\"freshness-btm\"><a href=\"#\" title=\"View Eh Jewel&#39;s profile\" class=\"bbp-author-link\"></a><div class=\"freshness-name\"><a href=\"#\" title=\"View Eh Jewel&#39;s profile\" class=\"bbp-author-link\"></a><a href=\"#\" title=\"View Eh Jewel&#39;s profile\" class=\"bbp-author-link\"><span class=\"bbp-author-name\">Eh Jewel</span></a></div><span class=\"bbp-author-avatar\"><img alt=\"Eh Jewel\" src=\"https://html-template.spider-themes.net/docy/img/home_support/cp5.jpg\"></span></div></div></li></ul></div>", 1))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_11, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_12, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_13, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_FontAwesomeIcon, {
+    icon: "fa-solid fa-handshake",
+    "class": "text-primary fa-4xl"
+  })]), _cache[4] || (_cache[4] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+    "class": "entry-content"
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+    href: "/admin/forum/category"
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", {
+    "class": "post-title"
+  }, " Seminars and workshops ")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "Financial Planning/Retirement Planning/Estate Planning, etc.")], -1 /* HOISTED */))]), _cache[5] || (_cache[5] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"col-md-6 post-meta-wrapper\"><ul class=\"forum-titles\"><li class=\"forum-topic-count\">10</li><li class=\"forum-reply-count\">105</li><li class=\"forum-freshness\"><div class=\"freshness-box\"><div class=\"freshness-top\"><div class=\"freshness-link\"><a href=\"#\" title=\"Reply To: Main Forum Rules &amp; Policies\">2 years, 2 months ago</a></div></div><div class=\"freshness-btm\"><a href=\"#\" title=\"View Eh Jewel&#39;s profile\" class=\"bbp-author-link\"></a><div class=\"freshness-name\"><a href=\"#\" title=\"View Eh Jewel&#39;s profile\" class=\"bbp-author-link\"></a><a href=\"#\" title=\"View Eh Jewel&#39;s profile\" class=\"bbp-author-link\"><span class=\"bbp-author-name\">Eh Jewel</span></a></div><span class=\"bbp-author-avatar\"><img alt=\"Eh Jewel\" src=\"https://html-template.spider-themes.net/docy/img/home_support/cp5.jpg\"></span></div></div></li></ul></div>", 1))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_14, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_15, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_16, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_FontAwesomeIcon, {
+    icon: "fa-solid fa-fist-raised",
+    "class": "text-warning fa-4xl"
+  })]), _cache[6] || (_cache[6] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+    "class": "entry-content"
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+    href: "/admin/forum/category"
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", {
+    "class": "post-title"
+  }, " Training and development ")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "Leaders, if you are doing specific training in-person (small groups) or via zoom (large groups) for a certain area in financial advisory work, can extend to other FinArk consultants.")], -1 /* HOISTED */))]), _cache[7] || (_cache[7] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"col-md-6 post-meta-wrapper\"><ul class=\"forum-titles\"><li class=\"forum-topic-count\">10</li><li class=\"forum-reply-count\">105</li><li class=\"forum-freshness\"><div class=\"freshness-box\"><div class=\"freshness-top\"><div class=\"freshness-link\"><a href=\"#\" title=\"Reply To: Main Forum Rules &amp; Policies\">2 years, 2 months ago</a></div></div><div class=\"freshness-btm\"><a href=\"#\" title=\"View Eh Jewel&#39;s profile\" class=\"bbp-author-link\"></a><div class=\"freshness-name\"><a href=\"#\" title=\"View Eh Jewel&#39;s profile\" class=\"bbp-author-link\"></a><a href=\"#\" title=\"View Eh Jewel&#39;s profile\" class=\"bbp-author-link\"><span class=\"bbp-author-name\">Eh Jewel</span></a></div><span class=\"bbp-author-avatar\"><img alt=\"Eh Jewel\" src=\"https://html-template.spider-themes.net/docy/img/home_support/cp5.jpg\"></span></div></div></li></ul></div>", 1))])])]), _cache[9] || (_cache[9] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"col-lg-3\"><div class=\"forum_sidebar\"><!-- &lt;div class=&quot;widget status_widget&quot;&gt;\r\n                        &lt;h4 class=&quot;c_head&quot;&gt;Information&lt;/h4&gt;\r\n                        &lt;p class=&quot;status&quot;&gt;Support is &lt;span class=&quot;offline&quot;&gt;Offline&lt;/span&gt;&lt;/p&gt;\r\n\r\n                        &lt;div class=&quot;open-hours&quot;&gt;\r\n                            &lt;h4 class=&quot;title-sm&quot;&gt;Our office hours&lt;/h4&gt;\r\n                            &lt;p&gt;Monday - Friday / 10am - 6pm (UTC +4) NewYork&lt;/p&gt;\r\n                            &lt;ul class=&quot;current-time list-unstyled&quot;&gt;\r\n                                &lt;li&gt;\r\n                                    &lt;h4 class=&quot;title-sm&quot;&gt;Your time&lt;/h4&gt;\r\n                                    &lt;p&gt;10:30:15 PM&lt;/p&gt;\r\n                                &lt;/li&gt;\r\n                                &lt;li&gt;\r\n                                    &lt;h4 class=&quot;title-sm&quot;&gt;Your time&lt;/h4&gt;\r\n                                    &lt;p&gt;10:30:15 PM&lt;/p&gt;\r\n                                &lt;/li&gt;\r\n                            &lt;/ul&gt;\r\n                        &lt;/div&gt;\r\n                    &lt;/div&gt; --><aside class=\"l_widget user_list_wd\"><div class=\"r_heading d-flex justify-content-between\"><h3>Ticket Categories</h3></div><ul class=\"list-unstyled ticket_categories px-3 mb-0\"><li><img src=\"https://html-template.spider-themes.net/docy/img/home_support/cmm5.png\" alt=\"category\"><a href=\"#\">Docs WordPress Theme</a> <span class=\"count\">10</span></li><li><img src=\"https://html-template.spider-themes.net/docy/img/home_support/cmm4.png\" alt=\"category\"><a href=\"#\">Product Landing</a><span class=\"count count-fill\">13</span><span class=\"count\">54</span></li><li><img src=\"https://html-template.spider-themes.net/docy/img/home_support/cmm2.png\" alt=\"category\"><a href=\"#\">Knowledge Base</a><span class=\"count\">142</span></li><li><img src=\"https://html-template.spider-themes.net/docy/img/home_support/cmm8.png\" alt=\"category\"><a href=\"#\">Startup and App</a> <span class=\"count\">13</span></li><li><img src=\"https://html-template.spider-themes.net/docy/img/home_support/cmm9.png\" alt=\"category\"><a href=\"#\">Clean Email Template</a> <span class=\"count\">123</span></li><li><img src=\"https://html-template.spider-themes.net/docy/img/home_support/cmm10.png\" alt=\"category\"><a href=\"#\">Apps WordPress Theme</a> <span class=\"count\">18</span></li></ul></aside><aside class=\"l_widget user_list_wd\"><div class=\"r_heading d-flex justify-content-between\"><h3>Tags</h3></div><ul class=\"list-unstyled w_tag_list style-light p-3\"><li><a href=\"#\">Swagger</a></li><li><a href=\"#\">Docy</a></li><li><a href=\"#\">weCare</a></li><li><a href=\"#\">Business</a></li><li><a href=\"#\">Download</a></li><li><a href=\"#\">Doc</a></li><li><a href=\"#\">Product board</a></li><li><a href=\"#\">WordPress</a></li><li><a href=\"#\">Design</a></li><li><a href=\"#\">ui/ux</a></li><li><a href=\"#\">Doc Design</a></li><li><a href=\"#\">DocAll</a></li></ul></aside></div></div>", 1))])])], 64 /* STABLE_FRAGMENT */);
 }
 
 /***/ }),
@@ -177,12 +259,11 @@ var _hoisted_1 = {
 var _hoisted_2 = {
   "class": "fs-1"
 };
-var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br", null, null, -1 /* HOISTED */);
-var _hoisted_4 = {
+var _hoisted_3 = {
   "class": "text-end fs-6"
 };
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.currentTime), 1 /* TEXT */), _hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.timezone), 1 /* TEXT */)]);
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.currentTime), 1 /* TEXT */), _cache[0] || (_cache[0] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br", null, null, -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.timezone), 1 /* TEXT */)]);
 }
 
 /***/ }),
@@ -249,13 +330,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _Index_vue_vue_type_template_id_490f470b__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Index.vue?vue&type=template&id=490f470b */ "./resources/js/Pages/Admin/Forum/Index.vue?vue&type=template&id=490f470b");
 /* harmony import */ var _Index_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Index.vue?vue&type=script&setup=true&lang=js */ "./resources/js/Pages/Admin/Forum/Index.vue?vue&type=script&setup=true&lang=js");
-/* harmony import */ var C_xampp_htdocs_clients_finark_laravel_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var D_xampp_htdocs_clients_finark_laravel_finark_laravel_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_clients_finark_laravel_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_Index_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Index_vue_vue_type_template_id_490f470b__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Pages/Admin/Forum/Index.vue"]])
+const __exports__ = /*#__PURE__*/(0,D_xampp_htdocs_clients_finark_laravel_finark_laravel_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_Index_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Index_vue_vue_type_template_id_490f470b__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Pages/Admin/Forum/Index.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -276,13 +357,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _DigitalClockWidget_vue_vue_type_template_id_60f55f47__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./DigitalClockWidget.vue?vue&type=template&id=60f55f47 */ "./resources/js/Shared/Components/DigitalClockWidget.vue?vue&type=template&id=60f55f47");
 /* harmony import */ var _DigitalClockWidget_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./DigitalClockWidget.vue?vue&type=script&lang=js */ "./resources/js/Shared/Components/DigitalClockWidget.vue?vue&type=script&lang=js");
-/* harmony import */ var C_xampp_htdocs_clients_finark_laravel_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var D_xampp_htdocs_clients_finark_laravel_finark_laravel_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_clients_finark_laravel_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_DigitalClockWidget_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_DigitalClockWidget_vue_vue_type_template_id_60f55f47__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Shared/Components/DigitalClockWidget.vue"]])
+const __exports__ = /*#__PURE__*/(0,D_xampp_htdocs_clients_finark_laravel_finark_laravel_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_DigitalClockWidget_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_DigitalClockWidget_vue_vue_type_template_id_60f55f47__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Shared/Components/DigitalClockWidget.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -303,13 +384,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _AdminHeader_vue_vue_type_template_id_ac28f7f6__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./AdminHeader.vue?vue&type=template&id=ac28f7f6 */ "./resources/js/Shared/Partials/CorporateUI/AdminHeader.vue?vue&type=template&id=ac28f7f6");
 /* harmony import */ var _AdminHeader_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./AdminHeader.vue?vue&type=script&setup=true&lang=js */ "./resources/js/Shared/Partials/CorporateUI/AdminHeader.vue?vue&type=script&setup=true&lang=js");
-/* harmony import */ var C_xampp_htdocs_clients_finark_laravel_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var D_xampp_htdocs_clients_finark_laravel_finark_laravel_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_clients_finark_laravel_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_AdminHeader_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_AdminHeader_vue_vue_type_template_id_ac28f7f6__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Shared/Partials/CorporateUI/AdminHeader.vue"]])
+const __exports__ = /*#__PURE__*/(0,D_xampp_htdocs_clients_finark_laravel_finark_laravel_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_AdminHeader_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_AdminHeader_vue_vue_type_template_id_ac28f7f6__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Shared/Partials/CorporateUI/AdminHeader.vue"]])
 /* hot reload */
 if (false) {}
 

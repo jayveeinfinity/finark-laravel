@@ -5,12 +5,12 @@
                 <div class="col-lg-6 mb-lg-0 mb-4">
                     <div class="copyright text-center text-xs text-muted text-lg-start">
                         Copyright
-                        © 2023
-                        Corporate UI by
-                        <a href="https://www.creative-tim.com" class="text-secondary" target="_blank">Creative Tim</a>.
+                        © 2024
+                        FinArk
+                        <!-- <a href="https://www.creative-tim.com" class="text-secondary" target="_blank">Creative Tim</a>. -->
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <!-- <div class="col-lg-6">
                     <ul class="nav nav-footer justify-content-center justify-content-lg-end">
                         <li class="nav-item">
                         <a href="https://www.creative-tim.com" class="nav-link text-xs text-muted" target="_blank">Creative Tim</a>
@@ -25,7 +25,7 @@
                         <a href="https://www.creative-tim.com/license" class="nav-link text-xs pe-0 text-muted" target="_blank">License</a>
                         </li>
                     </ul>
-                </div>
+                </div> -->
             </div>
         </div>
     </footer>

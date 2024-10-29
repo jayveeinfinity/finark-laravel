@@ -187,6 +187,11 @@
             border-radius: 1rem 1rem 0rem 0rem;
         }
     }
+
+    &--main-forum {
+        padding: 30px 40px 70px 40px;
+        min-height: 100vh;
+    }
 }
 .sidebar-icon-wrapper {
     display: inline-block;
@@ -212,3 +217,15 @@
         color: #fff;
     }
 }
+
+
+
+
+            // . {
+            //     background: #fff;
+            //     position: relative;
+            //     margin-bottom: 2.5rem;
+            //     padding: 2.5rem 2rem;
+            //     border-radius: 12px;
+            //     box-shadow: 0 20px 90px rgba(58,46,68,.05);
+            // }

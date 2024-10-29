@@ -8,6 +8,9 @@
         <!-- <title>Dashboard - FinArk</title> -->
         <!--     Fonts and icons     -->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Noto+Sans:300,400,500,600,700,800|PT+Mono:300,400,500,600,700" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
         <!-- Nucleo Icons -->
         <link href="{{ asset('css/nucleo-icons.css') }}" rel="stylesheet" />
         <link href="{{ asset('css/nucleo-svg.css') }}" rel="stylesheet" />
@@ -18,6 +21,7 @@
         <link rel="icon" type="image/png" href="{{ asset('storage/images/brands/logo.png') }}">
         <link type="text/css" id="pagestyle" href="{{ asset('css/corporate-ui-dashboard.css?v=1.0.0') }}" rel="stylesheet">
         <link href="{{ mix('/css/custom.css') }}" rel="stylesheet" />
+        <link href="{{ mix('/css/forum.css') }}" rel="stylesheet" />
 
         <script src="{{ mix('/js/app.js') }}" defer></script>
         <script src="{{ mix('/js/manifest.js') }}" defer></script>

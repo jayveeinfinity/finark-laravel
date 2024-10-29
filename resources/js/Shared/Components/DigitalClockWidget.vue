@@ -6,9 +6,9 @@
 </template>
 
 <script>
-    import { format } from 'date-fns';
+    import { format, formatInTimeZone } from 'date-fns-tz';
 
-    const getCurrentTime = () => format(new Date(), 'h:mm:ss a');
+    const getCurrentTime = () => formatInTimeZone(new Date(), 'Asia/Singapore', 'h:mm:ss a');
 
     export default {
         data() {

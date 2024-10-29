@@ -117,11 +117,11 @@
                         <a href="#" class="nav-link text-white font-weight-bold px-0" target="_blank"></a>
                     </li>
                     <li class="nav-item dropdown d-flex align-items-center">
-                        <a href="#" class="nav-link text-white font-weight-bold px-0" target="_blank">
+                        <Link href="/admin/profile" class="nav-link text-white font-weight-bold px-0">
                             <div class="avatar avatar-sm position-relative">
                                 <img src="/storage/images/brands/logo-white.png" alt="profile_image" class="w-100 border-radius-md">
                             </div>
-                        </a>
+                        </Link>
                     </li>
                     <a href="#" class="nav-link text-white font-weight-bold px-0" target="_blank"></a>
                 </ul>

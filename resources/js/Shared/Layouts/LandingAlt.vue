@@ -17,7 +17,7 @@
         <meta content="summary_large_image" name="twitter:card">
     </Head>
     <body class="finark-bg-default">
-        <AdminNav v-show="$page.props.auth != null" />
+        <!-- <AdminNav v-show="$page.props.auth != null" /> -->
         <div class="main-content">
             <Header />
         </div>

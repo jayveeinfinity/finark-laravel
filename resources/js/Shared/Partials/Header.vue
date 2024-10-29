@@ -60,7 +60,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
                     </li>
                     <li class="nav-item">
                         <a class="nav-link nav-link-icon" href="/services">
-                            <span class="nav-link-inner--text fw-bold fa-2024-header-nav" :class="$page.component == 'Services' ? 'active' : ''">Services</span>
+                            <span class="nav-link-inner--text fw-bold fa-2024-header-nav" :class="$page.component == 'Services' || $page.component == 'Service' ? 'active' : ''">Services</span>
                         </a>
                     </li>
                     <li class="nav-item">
@@ -79,8 +79,32 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
                         </a>
                     </li>
                 </ul>
-                <a class="btn fa-2024-btn-wide px-lg-4 px-5 d-lg-inline-block d-block mt-lg-0 mt-3 ms-lg-3 ms-0" href="/signin">Log In</a>
+                <a class="btn fa-2024-btn-wide px-lg-4 px-5 d-lg-inline-block d-block mt-lg-0 mt-3 ms-lg-3 ms-0" href="/signin" v-if="!authorize()">Log In</a>
+                <div class="dropdown" v-if="authorize()">
+                    <button class="btn fa-2024-btn-wide px-lg-4 px-5 d-lg-inline-block d-block mt-lg-0 mt-3 ms-lg-3 ms-0 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        {{ username }}
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/admin">Intranet</a></li>
+                        <li><a class="dropdown-item" href="/signout">Signout</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </nav>
 </template>
+
+<script>
+    export default {
+        computed: {
+            username () {
+                return this.authorize() ? this.$page.props.auth.user.name : '';
+            }
+        },
+        methods: {
+            authorize() {
+                return this.$page.props.auth != null;
+            }
+        }
+    }
+</script>
